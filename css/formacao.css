@@ -112,7 +112,7 @@
 .graduacao2 .curso {
   font-size: 18px;
 }
-.graduacao3 .curso{
+.graduacao3 .curso {
   font-size: 16px;
 }
 
@@ -242,7 +242,7 @@
     display: none;
   }
 
-  .subtitulo-form-alt{
+  .subtitulo-form-alt {
     display: block;
     /* grid-row: 1; */
     grid-column: 1/-1;
@@ -288,9 +288,17 @@
     text-align: left;
     list-style: disc;
   }
+
   .linguas {
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    max-height: fit-content;
+    gap: 40px;
   }
+  .lista-de-linguas {
+    grid-row: 2;
+  }
+
   .lista-de-linguas-comp {
     grid-column: 1;
     grid-row: 3;
@@ -315,18 +323,14 @@
   .cursos {
     grid-template-columns: 1fr;
   }
-  .linguas {
-    grid-template-columns: 1fr;
-  }
-  
 
   /* .graduacao1::before {
     top: 95px;
   } */
 }
 
-@media(max-width: 420px) {
-    .graduacao1::before {
+@media (max-width: 420px) {
+  .graduacao1::before {
     top: 75px;
   }
 }
