@@ -12,6 +12,7 @@
   grid-template-columns: repeat (2, 1fr);
   grid-template-rows: 1fr auto;
   gap: 40px 80px;
+  max-width: 1200px;
 }
 
 .texto-rodape {
@@ -103,4 +104,20 @@ a {
     grid-column: 1;
     grid-row: 3;
   }
+}
+
+@media (max-width: 500px) {
+  .texto-rodape{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .lista-rodape {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .rodape {
+    padding: 20px 40px;
+  }
+
 }
