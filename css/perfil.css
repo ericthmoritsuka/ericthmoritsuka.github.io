@@ -1,0 +1,97 @@
+.perfil {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2.5fr 4.5fr 5fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.foto {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.introducao {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-content: center;
+  padding-right: 3rem;
+}
+
+.nome {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4.5rem;
+  line-height: 4.63rem;
+  color: #0f0f0f;
+  align-self: end;
+  grid-row: 1;
+}
+
+.cargo h2 {
+  background: linear-gradient(180deg, #9b9bd8 0%, #6868ac 100%);
+  border-radius: 5px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  color: #fafafa;
+  padding: 0.63rem;
+}
+
+.localizacao {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 0.63rem 0;
+}
+
+.localizacao-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
+  color: #757575;
+}
+
+.sobre-mim {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.13rem;
+  line-height: 2rem;
+  color: #282828;
+  background-color: #fafafa;
+  align-self: center;
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+  .foto {
+    display: none;
+  }
+
+  .perfil {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .perfil {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+}

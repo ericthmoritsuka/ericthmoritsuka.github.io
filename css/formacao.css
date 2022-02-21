@@ -1,0 +1,315 @@
+.formacao {
+  display: grid;
+  background-color: #fff;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+}
+
+.bg-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+}
+
+.subtitulo-form {
+  grid-column: 1;
+  grid-row: 1/-1;
+  display: block;
+  align-self: center;
+}
+
+.subtitulo-form h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 90px;
+  text-align: right;
+  color: #5c5c5c;
+}
+
+.subtitulo-form-alt {
+  display: none;
+}
+
+.roxo {
+  background: -webkit-linear-gradient(-180deg, #9b9bd8 0%, #6868ac 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.graduacoes {
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 20px;
+  grid-column: 2/-1;
+}
+
+.graduacao1,
+.graduacao2,
+.graduacao3 {
+  flex: 1;
+  background-color: #424242;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr; */
+  align-items: top;
+  /* min-width: auto; */
+  position: relative;
+  gap: 15px;
+}
+
+.graduacao1::before,
+.graduacao2::before,
+.graduacao3::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 4px;
+  background-image: url(../img/detalhe.svg);
+  position: absolute;
+  top: 95px;
+  left: 10px;
+}
+
+.titulo {
+  flex: 1;
+  /* flex: 1;
+  grid-column: 1;
+  grid-row: 1; */
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #8f8f8f;
+}
+
+.curso {
+  flex: 1;
+  /* grid-column: 1;
+  grid-row: 2; */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fafafa;
+}
+
+.graduacao1 {
+  min-width: 90px;
+}
+
+.graduacao2 .curso {
+  font-size: 18px;
+}
+.graduacao3 .curso{
+  font-size: 16px;
+}
+
+.instituicao {
+  /* grid-column: 1;
+  grid-row: 3; */
+  flex: 1;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #c2c2c2;
+}
+
+.ano {
+  flex: 1;
+  text-align: right;
+  grid-column: 2;
+  grid-row: 1;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #757575;
+}
+
+.cursos {
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto, 1fr;
+  grid-row: 2;
+  grid-column: 2/-1;
+  padding-bottom: 0px;
+}
+
+.cursos h2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+  color: #000000;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.lista-de-cursos {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  grid-column: 1;
+  grid-row: 2;
+  text-align: left;
+}
+
+.lista-de-cursos-comp {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: right;
+  line-height: 20px;
+  text-align: right;
+  color: #000000;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.linguas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto, 1fr;
+  grid-row: 3;
+  grid-column: 2/-1;
+  padding: 20px 40px;
+  padding-bottom: 0px;
+}
+
+.lista-de-linguas {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  grid-column: 1;
+  grid-row: 2;
+  text-align: left;
+}
+
+.lista-de-linguas-comp {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: right;
+  color: #000000;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.cursos,
+.linguas {
+  position: relative;
+}
+.cursos::before,
+.linguas::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 4px;
+  background-image: url(../img/detalhe.svg);
+  position: absolute;
+  top: 40px;
+  left: 25px;
+}
+
+@media (max-width: 1200px) {
+  .subtitulo-form {
+    display: none;
+  }
+
+  .subtitulo-form-alt{
+    display: block;
+    /* grid-row: 1; */
+    grid-column: 1/-1;
+    font-size: 3rem;
+    text-align: left;
+    padding-bottom: 40px;
+    order: 0;
+  }
+
+  .bg-form {
+    gap: 40px 0px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  .graduacoes {
+    grid-row: 2;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+    /* padding: 40px; */
+  }
+  .cursos {
+    grid-template-rows: auto 1fr;
+    gap: 20px 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 3;
+  }
+  .lista-de-cursos-comp {
+    grid-column: 2;
+  }
+  .linguas {
+    grid-template-rows: auto 1fr;
+    gap: 20px 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 4;
+  }
+
+  .lista-de-linguas-comp {
+    grid-column: 2;
+  }
+
+  .lista-de-cursos-comp {
+    display: none;
+  }
+  .linguas {
+    grid-template-rows: auto 1fr 1fr;
+  }
+  .lista-de-linguas-comp {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: left;
+  }
+}
+
+@media (max-width: 800px) {
+  .formacao {
+    padding: 60px;
+  }
+  .bg-form {
+    gap: 20px 0px;
+  }
+  /* .graduacao1::before {
+    top: 95px;
+  } */
+}
+
+@media(max-width: 420px) {
+    .graduacao1::before {
+    top: 75px;
+  }
+}

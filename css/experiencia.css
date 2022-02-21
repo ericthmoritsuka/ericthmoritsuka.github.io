@@ -1,0 +1,275 @@
+.experiencia {
+  display: grid;
+  background-color: #282828;
+  color: #fafafa;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+}
+
+.bg-exp {
+  display: grid;
+  grid-template-columns: auto 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 1200px;
+  gap: 40px;
+  margin-left: 20px;
+  /* padding: 0px 120px; */
+}
+
+.xp-ano1 {
+  /* grid-column: 1;
+  grid-row: 1; */
+  position: absolute;
+  top: 0px;
+  left: -110px;
+}
+
+.xp-ano2 {
+  /* grid-column: 1;
+  grid-row: 2; */
+  position: absolute;
+  top: 0px;
+  left: -110px;
+}
+
+.xp-ano3 {
+  /* grid-column: 1;
+  grid-row: 3; */
+  position: absolute;
+  top: 0px;
+  left: -110px;
+}
+
+.xp-ano1,
+.xp-ano2,
+.xp-ano3 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.xp-bloco1::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 4px;
+  background-image: url(../img/detalhe.svg);
+  position: absolute;
+  top: 45px;
+  left: -120px;
+}
+
+.xp-bloco2::before,
+.xp-bloco3::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 4px;
+  background-image: url(../img/detalhe.svg);
+  position: absolute;
+  top: 20px;
+  left: -120px;
+}
+
+.xp-bloco1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.xp-bloco2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.xp-bloco3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.xp-bloco1,
+.xp-bloco2,
+.xp-bloco3 {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 0.35fr 1fr;
+  background-color: #424242;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.xp-lugar {
+  grid-column: 1;
+  grid-row: 1;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.xp-cargo {
+  grid-column: 2;
+  grid-row: 1;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: #c2c2c2;
+  align-items: initial;
+}
+
+.xp-descricao {
+  grid-column: 1;
+  grid-row: 2;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.xp-lista {
+  grid-column: 2;
+  grid-row: 2;
+  display: inline;
+}
+
+.xp-lista li {
+  padding: 4px 8px;
+  margin: 5px;
+  display: inline-block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #757575;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.subtitulo-exp {
+  grid-column: 2;
+  grid-row: 1/-1;
+  display: block;
+  align-self: center;
+}
+
+.subtitulo-exp-alt {
+  display: none;
+}
+
+.subtitulo-exp h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 90px;
+  text-align: right;
+  color: #5c5c5c;
+}
+
+.roxo {
+  background: -webkit-linear-gradient(180deg, #9b9bd8 0%, #6868ac 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1200px) {
+  .bg-exp {
+    grid-template-columns: 6fr;
+    grid-template-rows: auto repeat(3, 1fr);
+  }
+
+  .subtitulo-exp {
+    display: none;
+  }
+
+  .subtitulo-exp-alt {
+    display: block;
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 3rem;
+    text-align: right;
+    padding-bottom: 40px;
+  }
+
+  .xp-bloco1 {
+    grid-row: 2;
+  }
+  .xp-bloco2 {
+    grid-row: 3;
+  }
+  .xp-bloco3 {
+    grid-row: 4;
+  }
+
+  /* .xp-ano1 {
+    grid-row: 2;
+  }
+
+  .xp-ano2 {
+    grid-row: 3;
+  }
+
+  .xp-ano3 {
+    grid-row: 4;
+  } */
+  
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    padding: 60px;
+  }
+
+  .bg-exp {
+    grid-template-columns: 6fr;
+    gap: 20px 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .xp-ano1::before,
+  .xp-ano2::before,
+  .xp-ano3::before {
+    display: none;
+    left: -100px;
+  }
+
+  .xp-ano1, .xp-ano2, .xp-ano3 {
+    position: initial;
+    order: 1;
+    text-align: left;
+  }
+
+  .xp-bloco1, .xp-bloco2, .xp-bloco3 {
+    grid-column: 1;
+  }
+  
+  .xp-lugar {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  .xp-cargo {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  .xp-descricao {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
