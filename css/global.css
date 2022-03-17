@@ -67,16 +67,9 @@ body {
   color: #000;
 }
 
-a {
+a, a:hover, a:focus, a:active {
   text-decoration: none;
-}
-
-a:visited {
-  color: var(--cor-p4);
-}
-
-footer a:visited{
-  color: #6868ac;
+  color: inherit;
 }
 
 ul {
