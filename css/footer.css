@@ -6,6 +6,7 @@
 }
 
 .bg-rodape {
+  margin: 0 auto;
   display: grid;
   max-width: auto;
   grid-template-columns: repeat (2, 1fr);
