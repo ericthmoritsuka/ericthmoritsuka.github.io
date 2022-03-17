@@ -1,0 +1,9 @@
+.escuro{
+  background-color: black;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.claro{
+  color: var(--cor-1);
+}
