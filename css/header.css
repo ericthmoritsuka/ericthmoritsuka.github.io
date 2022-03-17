@@ -22,10 +22,6 @@
   display: block;
 }
 
-.menu a:hover {
-  color: var(--cor-p4);
-}
-
 @media (max-width: 800px) {
   .atualizado {
     display: none;
