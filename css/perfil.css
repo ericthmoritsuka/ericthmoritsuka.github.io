@@ -27,12 +27,6 @@
 }
 
 .nome {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 4.5rem;
-  line-height: 4.63rem;
-  color: #0f0f0f;
   align-self: end;
   grid-row: 1;
 }
@@ -40,12 +34,6 @@
 .cargo h2 {
   background: linear-gradient(180deg, #9b9bd8 0%, #6868ac 100%);
   border-radius: 5px;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.75rem;
-  line-height: 2rem;
-  color: #fafafa;
   padding: 0.63rem;
 }
 
@@ -55,22 +43,7 @@
   padding: 0.63rem 0;
 }
 
-.localizacao-text {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.88rem;
-  line-height: 1.25rem;
-  color: #757575;
-}
-
 .sobre-mim {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.13rem;
-  line-height: 2rem;
-  color: #282828;
   background-color: #fafafa;
   align-self: center;
   padding: 20px;
@@ -97,7 +70,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .perfil {
     padding: 20px 20px;
     padding-bottom: 20px;
@@ -108,10 +81,6 @@
     padding-right: 0px;
   }
 
-  .nome {
-    font-size: 2.5rem;
-    line-height: 2.6rem;
-  }
 
   .sobre-mim {
     padding: 0px;

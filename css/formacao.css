@@ -36,12 +36,6 @@
   display: none;
 }
 
-.roxo {
-  background: -webkit-linear-gradient(-180deg, #9b9bd8 0%, #6868ac 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .graduacoes {
   display: flex;
   flex-wrap: wrap;
