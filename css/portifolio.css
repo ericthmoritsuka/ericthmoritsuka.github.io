@@ -69,6 +69,7 @@
   place-self: start;
   align-self: center;
   max-width: max-content;
+  white-space: nowrap;
 }
 .sobre-info a:hover{
   border: 2px solid var(--cor-p3);
@@ -98,7 +99,7 @@
 
 @media (max-width: 900px) {
   .header.escuro a {
-    background-color: var(--cor-11);
+    background-color: var(--cor-10);
     color: var(--cor-1);
     border-radius: 5px;
     margin: 10px 10px;
