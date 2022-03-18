@@ -61,8 +61,7 @@
 }
 
 .sobre-info a{
-  border: 2px solid var(--cor-p1);
-  background-color: var(--cor-p2);
+  border: 2px solid var(--cor-p3);
   color: var(--cor-p9);
   border-radius: 5px;
   padding: 10px 20px;
@@ -72,8 +71,8 @@
   white-space: nowrap;
 }
 .sobre-info a:hover{
-  border: 2px solid var(--cor-p3);
-  background-color: var(--cor-p4);
+  border: 2px solid var(--cor-p4);
+  background-color: var(--cor-p1);
   color: var(--cor-p9);
 }
 .site {
