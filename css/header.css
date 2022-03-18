@@ -22,19 +22,16 @@
   display: block;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .atualizado {
     display: none;
   }
-
-  .header {
-    justify-content: center;
-  }
-
   .menu {
     justify-content: center;
   }
-
+  .header {
+    justify-content: center;
+  }
   .header a {
     background-color: #f5f5f5;
     border-radius: 5px;

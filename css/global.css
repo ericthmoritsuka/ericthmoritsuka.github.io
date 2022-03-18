@@ -10,8 +10,13 @@
   --cor-9: #424242;
   --cor-10: #282828;
   --cor-11: #0f0f0f;
+  --cor-p1: #e0e0ff;
+  --cor-p2: #babaf0;
+  --cor-p3: #8b8bcc;
   --cor-p4: #6868ac;
+  --cor-p5: #4d4d9a;
   --cor-p6: #373781;
+  --cor-p7: #202060;
   --cor-p9: #030321;
 }
 
@@ -48,11 +53,26 @@
 .cor-11 {
   color: var(--cor-11);
 }
+.cor-p1 {
+  color: var(--cor-p1);
+}
+.cor-p2 {
+  color: var(--cor-p2);
+}
+.cor-p3 {
+  color: var(--cor-p3);
+}
 .cor-p4 {
   color: var(--cor-p4);
 }
-.cor-p6{
+.cor-p5 {
+  color: var(--cor-p5);
+}
+.cor-p6 {
   color: var(--cor-p6);
+}
+.cor-p7 {
+  color: var(--cor-p7);
 }
 .cor-p9 {
   color: var(--cor-p9);
@@ -71,7 +91,10 @@ body {
   color: #000;
 }
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
@@ -177,6 +200,10 @@ h3 {
   font-weight: 700;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 @media (max-width: 800px) {
   .font-1m {
     font-size: 1.25rem;
@@ -210,12 +237,12 @@ h3 {
     line-height: 1.4;
   }
 
-  .font-2-l{
+  .font-2-l {
     font-size: 1rem;
     line-height: 1.25;
   }
 
-  .font-atualizacao{
+  .font-atualizacao {
     font-size: 0.5rem;
   }
 }
