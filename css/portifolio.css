@@ -157,10 +157,6 @@
     line-height: 1.75rem;
   }
 
-  .sobre-info a{
-    font-size: .65rem;
-  }
-
   .site{
     grid-row: 3;
     grid-column: 1/-1;
