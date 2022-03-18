@@ -61,8 +61,8 @@
 }
 
 .sobre-info a{
-  border: 2px solid var(--cor-p3);
-  color: var(--cor-p9);
+  border: 2px solid var(--cor-p1);
+  color: var(--cor-p5);
   border-radius: 5px;
   padding: 10px 20px;
   place-self: start;
@@ -71,9 +71,9 @@
   white-space: nowrap;
 }
 .sobre-info a:hover{
-  border: 2px solid var(--cor-p4);
+  border: 2px solid var(--cor-p3);
   background-color: var(--cor-p1);
-  color: var(--cor-p9);
+  color: var(--cor-p7);
 }
 .site {
   grid-column: 1;
@@ -151,6 +151,11 @@
   .sobre-info h1{
     font-size: 2rem;
   }
+
+  .sobre-info h1:before{
+    height: 32px;
+  }
+
   .sobre-info p{
     font-size: 1rem;
     line-height: 1.75rem;
