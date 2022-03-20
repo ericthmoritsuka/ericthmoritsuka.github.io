@@ -142,6 +142,11 @@
     border-radius: 5px;
     margin: 10px 10px;
   }
+
+  .code-tags{
+    place-self: end;
+  }
+  
   .portifolio-titulo{
     padding: 40px;
   }
@@ -183,6 +188,13 @@
     grid-template-rows: repeat(3, auto) repeat(2, 0.25fr);
   }
 
+  .code-tags {
+    grid-column: 1/-1;
+    grid-row: 2;
+    place-self: start;
+    justify-content: start;
+  }
+
   .portifolio-titulo{
     font-size: 2.5rem;
   }
@@ -201,12 +213,12 @@
   }
 
   .site{
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 1/-1;
     margin-bottom: 20px;
   }
   .git {
-    grid-row: 4;
+    grid-row: 5;
     grid-column: 1/-1;
   }
 }
