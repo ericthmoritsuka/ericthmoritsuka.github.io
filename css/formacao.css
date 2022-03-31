@@ -38,11 +38,10 @@
   grid-column: 2/-1;
 }
 
-.graduacao1,
-.graduacao2,
-.graduacao3 {
+.graduacao{
   flex: 1;
   background-color: #424242;
+
   border-radius: 5px;
   padding: 20px;
   display: flex;
@@ -55,20 +54,8 @@
   gap: 15px;
 }
 
-.graduacao1::before,
-.graduacao2::before,
-.graduacao3::before {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 4px;
-  background-image: url(../img/detalhe.svg);
-  position: absolute;
-  top: 100px;
-  left: 5px;
-}
-
 .titulo {
+  color: var(--cor-p2);
   flex: 1;
 }
 
@@ -76,7 +63,7 @@
   flex: 1;
 }
 
-.graduacao1 {
+.graduacao {
   min-width: 90px;
 }
 
@@ -247,10 +234,6 @@
 }
 
 @media (max-width: 420px) {
-  .graduacao1::before {
-    top: 75px;
-  }
-
   .lista-de-linguas-comp {
     grid-column: 1;
     grid-row: 3;
