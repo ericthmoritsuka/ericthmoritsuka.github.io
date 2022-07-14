@@ -118,6 +118,7 @@
   background-color: var(--cor-p1);
   color: var(--cor-p7);
 }
+
 .site {
   grid-column: 1;
   grid-row: 3;
