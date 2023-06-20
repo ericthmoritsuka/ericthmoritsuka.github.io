@@ -131,7 +131,8 @@
   .pontos-css,
   .pontos-javascript,
   .pontos-react,
-  .pontos-r {
+  .pontos-r,
+  .pontos-java {
     display: flex;
     gap: 3.5px;
   }
