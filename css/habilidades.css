@@ -1,151 +1,78 @@
-.habilidades {
-  display: grid;
-  grid-template-columns: 2.5fr 1fr 2.5fr;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.set-habilidades2 {
-  grid-column: 3;
-}
-
-.set-habilidades1,
-.set-habilidades2 {
+.habilidades-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 20px;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  padding: 40px 20px;
 }
 
-.set-habilidades1 h2,
-.set-habilidades2 h2 {
-  grid-row: 1;
-  grid-column: 1;
+.lista-skills {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.lista-skills li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* O container que vai segurar as 10 bolinhas */
+.pontos {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* Cria 10 colunas iguais */
+  gap: 8px; /* Espaço entre as bolinhas */
+  width: 200px; /* Largura total da régua de pontos */
+}
+
+/* A bolinha base (gera 10 de uma vez via pseudo-elemento) */
+/* Aqui usamos um truque: o container .pontos está vazio no HTML, 
+   mas vamos preenchê-lo com 10 bolinhas usando JS ou apenas CSS fixo.
+   Para ser 100% fiel ao original sem JS, vamos usar 10 spans vazios no HTML 
+   ou o método de gradiente sólido que não borra. */
+
+.pontos::before {
+  content: "";
+  grid-column: 1 / -1; /* Ocupa as 10 colunas */
+  height: 18px;
+
+  /* Criamos as 10 bolinhas cinzas (vazias) */
+  background-image: radial-gradient(circle, #dbdbdb 8px, transparent 9px);
+  background-size: 20px 18px;
+  background-repeat: repeat-x;
+}
+
+.pontos::after {
+  content: "";
+  grid-column: 1 / -1;
+  height: 18px;
+  /* Largura baseada no nível: 20px (tamanho de 1 bolinha + gap) * nível */
+  width: calc(var(--nivel) * 20px);
+
+  /* Criamos as bolinhas pretas (cheias) */
+  background-image: radial-gradient(circle, #282828 8px, transparent 9px);
+  background-size: 20px 18px;
+  background-repeat: repeat-x;
+
+  position: absolute;
+}
+
+.pontos {
   position: relative;
 }
 
-.set-habilidades1 h2::before,
-.set-habilidades2 h2::before {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 4px;
-  background-image: url(../img/detalhe.svg);
-  z-index: -1;
-  position: absolute;
-  top: 20px;
-  left: -10px;
-}
-
-.habilidades-lista1,
-.habilidades-lista2 {
-  grid-row: 2;
-  grid-column: 1;
-}
-
-.pontos-lista1,
-.pontos-lista2 {
-  grid-row: 2;
-  grid-column: 2;
-  display: grid;
-  align-items: center;
-  row-gap: 4px;
-}
-
-.pontos-python,
-.pontos-markdown,
-.pontos-adobe-suite,
-.pontos-git,
-.pontos-sql,
-.pontos-html,
-.pontos-css,
-.pontos-javascript,
-.pontos-react,
-.pontos-r,
-.pontos-java {
-  display: flex;
-  gap: 5px;
-}
-
-.pontoescuro {
-  height: 18px;
-  width: 18px;
-  background-color: #282828;
-  border-radius: 9px;
-}
-
-.pontoclaro {
-  height: 18px;
-  width: 18px;
-  background-color: #dbdbdb;
-  border-radius: 9px;
-}
-
-@media (max-width: 950px) {
-  .habilidades {
-    grid-template-columns: 1fr 0 0;
-    grid-template-rows: 1fr 1fr;
-    padding: 20px 100px;
-    margin: 0px auto;
-  }
-
-  .set-habilidades2 {
-    grid-row: 2;
-    grid-column: 1;
-  }
-
-  .set-habilidades1,
-  .set-habilidades2 {
-    padding: 50px;
-  }
+/* Ajuste Mobile */
+@media (max-width: 900px) {
+  .habilidades-container { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
-  .habilidades {
-    padding: 0px 40px;
-    margin: 0px;
-  }
-  .set-habilidades1,
-  .set-habilidades2 {
-    padding: 25px;
-  }
-  .habilidades-lista1,
-  .habilidades-lista2 {
-    font-size: 95%;
-  }
-  .pontos-lista1,
-  .pontos-lista2 {
-    row-gap: 2px;
-  }
-
-  .pontos-python,
-  .pontos-photoshop,
-  .pontos-illustrator,
-  .pontos-premiere,
-  .pontos-sql,
-  .pontos-html,
-  .pontos-css,
-  .pontos-javascript,
-  .pontos-react,
-  .pontos-r,
-  .pontos-java {
-    display: flex;
-    gap: 3.5px;
-  }
-
-  .pontoescuro {
-    height: 9px;
-    width: 9px;
-    border-radius: 4.5px;
-  }
-
-  .pontoclaro {
-    height: 9px;
-    width: 9px;
-    border-radius: 4.5px;
+  .pontos { width: 120px; gap: 4px; }
+  .pontos::before, .pontos::after { 
+    background-size: 12px 12px; 
+    height: 12px;
+    width: calc(var(--nivel) * 12px);
   }
 }
