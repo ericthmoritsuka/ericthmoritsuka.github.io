@@ -1,8 +1,8 @@
+@import "./experiencia.css";
+@import "./footer.css";
+@import "./formacao.css";
 @import "./global.css";
+@import "./habilidades.css";
 @import "./header.css";
 @import "./perfil.css";
-@import "./habilidades.css";
-@import "./experiencia.css";
-@import "./formacao.css";
-@import "./footer.css";
-@import "./portifolio.css";
+@import "./portfolio.css";
