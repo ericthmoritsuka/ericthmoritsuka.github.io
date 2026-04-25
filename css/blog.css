@@ -1,0 +1,164 @@
+/* ===================== BLOG ===================== */
+
+.blog-titulo{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0 20px 0;
+}
+
+.blog-sub-titulo{
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/* Container dos posts */
+
+.blog-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px 60px 40px;
+  display: grid;
+  gap: 40px;
+}
+
+/* Post individual */
+
+.post {
+  border-top: 2px solid var(--cor-p1);
+  padding-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+/* Alternância de fundo (igual seu padrão) */
+
+.post:nth-child(odd) {
+  background-color: var(--cor-2);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Título */
+
+.post-titulo {
+  font-family: "Montserrat";
+  font-size: 2rem;
+  line-height: 1.2;
+  position: relative;
+}
+
+/* Barrinha lateral (igual .sobre) */
+
+.post-titulo::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 5px;
+  height: 32px;
+  background-color: var(--cor-p3);
+  border-radius: 5px;
+}
+
+/* Data */
+
+.post-data {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+/* Resumo */
+
+.post-resumo {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--cor-7);
+}
+
+/* Link */
+
+.post-link {
+  border: 2px solid var(--cor-p1);
+  color: var(--cor-p5);
+  border-radius: 5px;
+  padding: 8px 16px;
+  max-width: max-content;
+  white-space: nowrap;
+}
+
+.post-link:hover {
+  border: 2px solid var(--cor-p3);
+  background-color: var(--cor-p1);
+  color: var(--cor-p7);
+}
+
+.post-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.tag {
+  font-size: 0.65rem;
+  display: inline-block;
+  padding: 2.5px 6px;
+  border-radius: 5px;
+  font-weight: bolder;
+
+  border: 3px solid rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+  color: #000; /* ou ajustamos depois */
+}
+
+.voltar-blog {
+  display: block;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 40px;
+
+  font-size: 0.875rem;
+  color: var(--cor-6);
+}
+
+.voltar-blog::before {
+  content: "← ";
+  margin-right: 4px;
+}
+
+.voltar-blog:hover {
+  color: var(--cor-p3);
+}
+
+/* ===================== RESPONSIVO ===================== */
+
+@media (max-width: 900px) {
+  .blog-titulo {
+    padding: 40px;
+  }
+
+  .blog-sub-titulo {
+    padding: 0 40px 20px 40px;
+  }
+
+  .blog-container {
+    padding: 0 20px 40px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .post-titulo {
+    font-size: 1.5rem;
+  }
+
+  .post-resumo {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .post-titulo::before {
+    height: 24px;
+  }
+}
