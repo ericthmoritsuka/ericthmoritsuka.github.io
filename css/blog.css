@@ -126,7 +126,7 @@
 
 /* 1. Reset para as Tags: Impede que as tags herdem o estilo de lista do artigo */
 .sobre-info .post-tags {
-  display: flex; 
+  display: flex;
   padding: 0;
   margin: 10px 0;
   list-style: none;
@@ -150,6 +150,7 @@
   gap: 16px;
 }
 
+.sobre-info ul:not(.not-tags) li,
 .sobre-info ul:not(.post-tags) li {
   position: relative;
   padding-left: 28px;
@@ -183,6 +184,59 @@
   font-size: 1.2rem;
 }
 
+/* ===================== NEW: BANNER & FORCE-CENTER FIX ===================== */
+
+/* Styles the new full-width banner image above the text */
+.post-banner {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 40px;
+}
+
+.post-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* FORCE METHOD: We use flex-direction column and align-items center
+   to FORCE the nested text containers to stay in the absolute middle */
+.sobre {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px 60px 40px;
+  box-sizing: border-box;
+}
+
+/* Squeezes the text area width so lines aren't too wide */
+.sobre-info {
+  width: 100%;
+  max-width: 680px !important;
+  margin: 0 auto !important;
+}
+
+/* Polishes the spacing of the blog headers */
+.sobre-info h1.font-grande {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.sobre-info .post-tags {
+  margin-bottom: 8px;
+}
+
+.sobre-info .font-atualizacao {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 0.85rem;
+}
+
 /* ===================== RESPONSIVO ===================== */
 
 @media (max-width: 900px) {
@@ -192,6 +246,10 @@
   }
   .blog-container {
     padding: 0 20px 40px 20px;
+  }
+  .post-banner {
+    padding: 0 20px;
+    margin-bottom: 20px;
   }
 }
 
