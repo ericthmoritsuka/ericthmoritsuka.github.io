@@ -59,6 +59,7 @@
 .post-data {
   font-size: 0.75rem;
   text-transform: uppercase;
+  margin-bottom: 12px; /* Adds a nice, clean breathing space above the button */
 }
 
 /* Resumo */
@@ -89,7 +90,7 @@
   gap: 10px;
   flex-wrap: wrap;
   margin: 10px 0;
-  list-style: none; /* Gararante que não haja estilo de lista */
+  list-style: none;
   padding: 0;
 }
 
@@ -122,9 +123,8 @@
   color: var(--cor-p3);
 }
 
-/* ===================== BLOG POST LISTS (FIXED) ===================== */
+/* ===================== BLOG POST LISTS ===================== */
 
-/* 1. Reset para as Tags: Impede que as tags herdem o estilo de lista do artigo */
 .sobre-info .post-tags {
   display: flex;
   padding: 0;
@@ -133,15 +133,14 @@
 }
 
 .sobre-info .post-tags li {
-  padding-left: 0; /* Remove o recuo do diamante */
+  padding-left: 0;
   margin: 0;
 }
 
 .sobre-info .post-tags li::before {
-  content: none; /* Remove o diamante das tags */
+  content: none;
 }
 
-/* 2. Estilo dos Bullets do Artigo: Alvo apenas nas listas de conteúdo */
 .sobre-info ul:not(.post-tags) {
   list-style: none;
   padding: 0;
@@ -184,42 +183,43 @@
   font-size: 1.2rem;
 }
 
-/* ===================== NEW: BANNER & FORCE-CENTER FIX ===================== */
+/* ===================== BANNER STRUCTURE (ABSOLUTE FORCE NO-CROP) ===================== */
 
-/* Styles the new full-width banner image above the text */
 .post-banner {
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 0 40px;
+  width: 100%;
+  max-width: 680px !important; /* Locks the container width to match your text perfectly */
+  margin: 40px auto 20px auto !important;
+  padding: 0 !important;       /* Removes side padding so the art aligns flush with the text borders */
+  box-sizing: border-box;
 }
 
 .post-banner img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 100% !important;      /* Forces the image to fill the 680px container width */
+  height: auto !important;     /* CRITICAL: Forces the browser to calculate the height naturally, preventing top/bottom cropping */
+  max-height: none !important; /* Destroys any hidden max-height limits hiding in other parts of your CSS */
+  object-fit: fill !important; /* Tells the browser to render the exact native proportions of the file */
+  display: block;
   border-radius: 8px;
 }
 
-/* FORCE METHOD: We use flex-direction column and align-items center
-   to FORCE the nested text containers to stay in the absolute middle */
 .sobre {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  max-width: 960px;
+  width: 100%; 
   margin: 0 auto;
-  padding: 0 40px 60px 40px;
+  padding: 0 0 60px 0;
   box-sizing: border-box;
 }
 
-/* Squeezes the text area width so lines aren't too wide */
 .sobre-info {
   width: 100%;
   max-width: 680px !important;
   margin: 0 auto !important;
+  padding: 0 20px; 
+  box-sizing: border-box;
 }
 
-/* Polishes the spacing of the blog headers */
 .sobre-info h1.font-grande {
   margin-top: 0;
   margin-bottom: 16px;
@@ -237,6 +237,63 @@
   font-size: 0.85rem;
 }
 
+/* ===================== FIXED: ACTORS SECTION ===================== */
+
+.actors-section {
+  width: 100%;
+  background-color: var(--cor-2); 
+  padding: 60px 0;
+  margin: 40px 0;
+  border-top: 1px solid rgba(0,0,0,0.03);
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.actors-container {
+  max-width: 960px; 
+  margin: 0 auto;
+  padding: 0 30px;
+  display: grid;
+  /* FIX: Forces a clean 3-column split on desktop while setting a comfortable min-width */
+  grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+  box-sizing: border-box;
+}
+
+.actor-block {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  justify-content: flex-start; 
+  height: 100%;
+  padding: 0 20px; 
+  box-sizing: border-box;
+}
+
+/* SEPARATORS: Creates thin vertical border lines between columns */
+.actor-block:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.actor-block p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--cor-7);
+  /* FIX: Returned text alignment to a clean, natural center to prevent ugly gaps */
+  text-align: center; 
+}
+
+.actor-img {
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 50%; 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border: 4px solid #fff;
+}
+
 /* ===================== RESPONSIVO ===================== */
 
 @media (max-width: 900px) {
@@ -247,9 +304,20 @@
   .blog-container {
     padding: 0 20px 40px 20px;
   }
-  .post-banner {
+}
+
+/* Breakpoint where columns switch to rows smoothly for smaller viewports */
+@media (max-width: 768px) {
+  .actors-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
     padding: 0 20px;
-    margin-bottom: 20px;
+  }
+  
+  .actor-block:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    padding-bottom: 40px; 
   }
 }
 
@@ -263,5 +331,11 @@
   }
   .post-titulo::before {
     height: 24px;
+  }
+  .actors-section {
+    padding: 40px 0;
+  }
+  .actor-block {
+    gap: 12px;
   }
 }
