@@ -1,7 +1,7 @@
 ---
 title: Hello, World!
 tags: [General]
-image: /blog-posts/images/hello-world.png
+image: /blog-posts/images/hello-world.jpg
 image_alt: "Hello World!"
 ---
 I was browsing my boss's personal site this week, and it was so inspiring that I remembered I had one, too. When I checked it, I discovered it hadn't been updated since last year! Even worse, the portfolio section hadn't been touched since I was hired at my current job.
