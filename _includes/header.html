@@ -11,20 +11,20 @@
 		<ul class="menu font-2-s{% unless page.header_dark %} cor-10{% endunless %}">
 		{%- if page.lang == "pt-br" %}
 			{%- unless page.is_profile %}
-			<li><a href="/index.html">Perfil</a></li>
+			<li><a href="/pt/">Perfil</a></li>
 			{%- endunless %}
-			<li><a href="/index.html#experiencia">Experiência</a></li>
-			<li><a href="/index.html#formacao">Formação</a></li>
-			<li><a href="{% if page.hide_footer %}/index.html#contato{% else %}#contato{% endif %}">Contato</a></li>
+			<li><a href="/pt/#experiencia">Experiência</a></li>
+			<li><a href="/pt/#formacao">Formação</a></li>
+			<li><a href="{% if page.hide_footer %}/pt/#contato{% else %}#contato{% endif %}">Contato</a></li>
 			<li><a href="/portfolio.html">Portfólio</a></li>
 			<li><a href="/blog.html">Blog</a></li>
 		{%- else %}
 			{%- unless page.is_profile %}
-			<li><a href="/indexEnglish.html">Profile</a></li>
+			<li><a href="/">Profile</a></li>
 			{%- endunless %}
-			<li><a href="/indexEnglish.html#experience">Experience</a></li>
-			<li><a href="/indexEnglish.html#education">Education</a></li>
-			<li><a href="{% if page.hide_footer %}/indexEnglish.html#contact{% else %}#contact{% endif %}">Contact</a></li>
+			<li><a href="/#experience">Experience</a></li>
+			<li><a href="/#education">Education</a></li>
+			<li><a href="{% if page.hide_footer %}/#contact{% else %}#contact{% endif %}">Contact</a></li>
 			<li><a href="/portfolioEnglish.html">Portfolio</a></li>
 			<li><a href="/blog.html">Blog</a></li>
 		{%- endif %}

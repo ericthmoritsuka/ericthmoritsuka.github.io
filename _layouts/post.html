@@ -35,4 +35,21 @@ layout: default
 
 			</div>
 		</section>
+
+		<nav class="post-nav" aria-label="more posts">
+			{% if page.previous %}
+			<a class="post-nav-link" href="{{ page.previous.url }}">
+				<span class="post-nav-rotulo">← Older post</span>
+				{{ page.previous.title }}
+			</a>
+			{% else %}
+			<span></span>
+			{% endif %}
+			{% if page.next %}
+			<a class="post-nav-link post-nav-proximo" href="{{ page.next.url }}">
+				<span class="post-nav-rotulo">Newer post →</span>
+				{{ page.next.title }}
+			</a>
+			{% endif %}
+		</nav>
 	</main>

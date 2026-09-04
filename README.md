@@ -10,7 +10,7 @@ Personal site and blog, built with [Jekyll](https://jekyllrb.com/) and published
 | `_layouts/post.html` | Blog post frame: banner image, title, tags, date. |
 | `_includes/` | Shared fragments (header, footer, date formatting). |
 | `_posts/` | One file per blog post (see below). |
-| `index.html` / `indexEnglish.html` | Profile pages (PT / EN). Only page content — no boilerplate. |
+| `index.html` / `index-pt.html` | Profile pages (EN at the root / PT at `/pt/`). Only page content — no boilerplate. |
 | `portfolio.html` / `portfolioEnglish.html` | Portfolio pages (PT / EN). |
 | `blog.html` | Blog index. Generated from `_posts/` — never edit the post list by hand. |
 | `css/`, `img/`, `js/`, `blog-posts/images/` | Static assets, copied as-is. |

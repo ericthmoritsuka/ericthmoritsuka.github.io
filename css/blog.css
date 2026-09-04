@@ -392,3 +392,56 @@
   background-color: var(--cor-p1);
   color: var(--cor-p7);
 }
+
+/* ===================== POST PREV/NEXT ===================== */
+
+.post-nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.post-nav-link {
+  display: block;
+  max-width: 46%;
+  border: 2px solid var(--cor-p1);
+  border-radius: 5px;
+  padding: 12px 18px;
+  color: var(--cor-p5);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.post-nav-link:hover {
+  border-color: var(--cor-p3);
+  background-color: var(--cor-p1);
+  color: var(--cor-p7);
+}
+
+.post-nav-proximo {
+  text-align: right;
+  margin-left: auto;
+}
+
+.post-nav-rotulo {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--cor-6);
+  margin-bottom: 4px;
+}
+
+@media (max-width: 600px) {
+  .post-nav {
+    flex-direction: column;
+  }
+  .post-nav-link,
+  .post-nav-proximo {
+    max-width: 100%;
+    text-align: left;
+    margin-left: 0;
+  }
+}
