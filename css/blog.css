@@ -343,3 +343,52 @@
     gap: 12px;
   }
 }
+/* ===================== 404 PAGE ===================== */
+
+.pagina-404 {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 60px 40px 80px;
+  text-align: center;
+}
+
+.pagina-404 .cena-404 {
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  margin: 40px 0 30px;
+}
+
+.frase-404 {
+  font-family: "Montserrat";
+  font-size: 1.75rem;
+  line-height: 1.4;
+  color: var(--cor-10);
+}
+
+.sub-404 {
+  margin-top: 12px;
+  color: var(--cor-7);
+}
+
+.links-404 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.links-404 a {
+  border: 2px solid var(--cor-p1);
+  color: var(--cor-p5);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 0.875rem;
+}
+
+.links-404 a:hover {
+  border-color: var(--cor-p3);
+  background-color: var(--cor-p1);
+  color: var(--cor-p7);
+}
