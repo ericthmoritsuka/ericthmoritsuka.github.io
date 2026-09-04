@@ -227,3 +227,284 @@
     grid-column: 1/-1;
   }
 }
+/* ===================== PROJECT CAROUSEL ===================== */
+/* The .sobre* rules above are kept for the blog post pages, which share them.
+   The carousel below is what the portfolio pages use now. */
+
+.carrossel {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.carrossel-trilho {
+  display: flex;
+  align-items: stretch;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px max(calc((100% - 720px) / 2), 24px) 30px;
+  scrollbar-width: none;
+  outline: none;
+}
+
+.carrossel-trilho::-webkit-scrollbar {
+  display: none;
+}
+
+.cartao {
+  flex: 0 0 auto;
+  width: min(720px, calc(100vw - 96px));
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-1);
+  border-radius: 5px;
+  border-top: 2px solid var(--cor-p1);
+  box-shadow: 0 12px 32px rgba(15, 15, 15, 0.14);
+  overflow: hidden;
+}
+
+.cartao-media {
+  position: relative;
+  height: 300px;
+  background-color: var(--cor-2);
+}
+
+.cartao-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.cartao-media a img:hover {
+  opacity: 0.75;
+}
+
+.cartao-thumbs {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.cartao-thumb {
+  width: 48px;
+  height: 34px;
+  padding: 0;
+  border: 2px solid var(--cor-1);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  background: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0.85;
+}
+
+.cartao-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cartao-thumb.ativo,
+.cartao-thumb:hover {
+  border-color: var(--cor-p3);
+  opacity: 1;
+}
+
+.cartao-corpo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  padding: 28px 32px 32px;
+}
+
+.cartao-cabecalho {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cartao-titulo {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.1;
+  position: relative;
+}
+
+.cartao-titulo::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 2px;
+  width: 5px;
+  height: 32px;
+  background-color: var(--cor-p3);
+  border-radius: 5px;
+}
+
+.cartao-tags {
+  margin: 0;
+  grid-column: auto;
+  grid-row: auto;
+  justify-content: end;
+}
+
+.cartao-descricao {
+  flex: 1;
+  min-height: 0;
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--cor-p2) transparent;
+}
+
+.cartao-descricao::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cartao-descricao::-webkit-scrollbar-thumb {
+  background-color: var(--cor-p2);
+  border-radius: 5px;
+}
+
+.cartao-descricao p {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  color: #7c7c7c;
+}
+
+.cartao-descricao p:last-child {
+  margin-bottom: 0;
+}
+
+.cartao-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cartao-botao {
+  border: 2px solid var(--cor-p1);
+  color: var(--cor-p5);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.cartao-botao:hover {
+  border-color: var(--cor-p3);
+  background-color: var(--cor-p1);
+  color: var(--cor-p7);
+}
+
+.carrossel-seta {
+  position: absolute;
+  top: 45%;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--cor-11);
+  color: var(--cor-1);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.carrossel-seta:hover {
+  background-color: var(--cor-p5);
+}
+
+.seta-prev {
+  left: max(calc((100% - 720px) / 2 - 72px), 12px);
+}
+
+.seta-next {
+  right: max(calc((100% - 720px) / 2 - 72px), 12px);
+}
+
+.carrossel-pontos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 24px;
+}
+
+.carrossel-ponto {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--cor-4);
+  cursor: pointer;
+  transition: transform 0.15s, background-color 0.15s;
+}
+
+.carrossel-ponto:hover {
+  background-color: var(--cor-p3);
+}
+
+.carrossel-ponto.ativo {
+  background-color: var(--cor-p5);
+  transform: scale(1.3);
+}
+
+@media (max-width: 900px) {
+  .carrossel-seta {
+    display: none;
+  }
+
+  .carrossel-trilho {
+    gap: 20px;
+    padding: 10px 24px 24px;
+  }
+
+  .cartao {
+    width: calc(100vw - 64px);
+  }
+
+  .cartao-media {
+    height: 220px;
+  }
+
+  .cartao-corpo {
+    padding: 20px 24px 24px;
+  }
+
+  .cartao-titulo {
+    font-size: 1.5rem;
+  }
+
+  .cartao-titulo::before {
+    height: 24px;
+    top: 1px;
+  }
+
+  .cartao-descricao {
+    max-height: 220px;
+  }
+}
+
+.carrossel-seta:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.carrossel-seta:disabled:hover {
+  background-color: var(--cor-11);
+}

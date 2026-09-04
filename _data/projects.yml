@@ -1,0 +1,328 @@
+# One entry per portfolio project, used by portfolio.html (PT) and
+# portfolioEnglish.html (EN) to build the project carousel.
+# tags map to the .tag-<name> color classes in css/portfolio.css.
+
+- id: dogs
+  title_pt: Dogs
+  title_en: Dogs
+  tags: [css, js, react]
+  github: https://github.com/ericthmoritsuka/dogs
+  site: https://ericthmoritsuka.github.io/dogs/
+  images:
+    - src: /img/portfolio/dogs1.jpg
+      alt: Screenshot dogs home
+    - src: /img/portfolio/dogs2.jpg
+      alt: Screenshot dogs adicionando fotos
+  desc_pt: |
+    <p>O projeto Dogs foi elaborado dentro do curso de React da Origamid.</p>
+    <p>Nele foram utilizados <span class="cor-p5">CSS, JavaScript e React</span> para codificar a aplicação.</p>
+    <p>Na aplicação (que utiliza basicamente React) é possível adicionar usuários (utilizando uma API desenvolvida em outro curso), resetar senha, postar fotos, deletar fotos, comentar em fotos da rede social e checar estatísticas do usuário.</p>
+    <p>A API que está sendo utilizada é hosteada pelo curso Origamid, dessa forma, os dados são deletados periodicamente. Portanto, se você estiver testando o site e for deslogado ou se suas fotos desaparecerem, esse é o motivo.</p>
+    <p>As páginas são <span class="cor-p7">responsivas</span>.</p>
+  desc_en: |
+    <p>The Dogs project was elaborated within the React course at Origamid.</p>
+    <p><span class="cor-p5">CSS, JavaScript and React</span> were used to code and create the application.</p>
+    <p>In this application (that uses mainly React), it is possible to add users (using an API developed in another course), reset the password, post photos, delete photos, comment on photos throughout the platform and check user stats.</p>
+    <p>The API that is being used is hosted by Origamid. So, the data is reset after a while. In this sense, if you are testing the application and you get logged off or your photos disappear, that is the reason.</p>
+    <p>The pages are <span class="cor-p7">responsive</span>.</p>
+
+- id: bikcraft
+  title_pt: Bikcraft
+  title_en: Bikcraft
+  tags: [html, css, js, figma]
+  github: https://github.com/ericthmoritsuka/bikcraft
+  site: https://ericthmoritsuka.github.io/bikcraft/
+  images:
+    - src: /img/portfolio/bikcraft.jpg
+      alt: Screenshot Bikcraft
+  desc_pt: |
+    <p>O projeto Bikcraft foi elaborado dentro dos cursos de HTML/CSS Básico e UI básico da Origamid.</p>
+    <p>Nele foram utilizados <span class="cor-p5">HTML, CSS, JavaScript, Figma e conceitos de UI design</span> para desenhar as páginas e para codificá-las.</p>
+    <p>As páginas são <span class="cor-p7">responsivas</span>.</p>
+  desc_en: |
+    <p>The Bikcraft project was elaborated within the Basic HTML/CSS and Basic UI courses at Origamid.</p>
+    <p><span class="cor-p5">HTML, CSS, JavaScript, Figma and UI design concepts</span> were used to draw the pages and code them.</p>
+    <p>The pages are <span class="cor-p7">responsive</span>.</p>
+
+- id: animais-fantasticos
+  title_pt: Animais Fantasticos
+  title_en: Animais Fantasticos
+  tags: [html, css, js]
+  github: https://github.com/ericthmoritsuka/animais-fantasticos
+  site: https://ericthmoritsuka.github.io/animais-fantasticos/
+  images:
+    - src: /img/portfolio/animais-fantasticos.jpg
+      alt: Screenshot Animais Fantásticos
+  desc_pt: |
+    <p>O projeto Animais Fantasticos foi elaborado dentro do curso de JavaScript Completo ES6 da Origamid.</p>
+    <p>Nele foram utilizados <span class="cor-p5">HTML, CSS e JavaScript</span> para desenhar a página e para codificá-la.</p>
+    <p>O JavaScript foi utilizado para ajustar o scroll mais suave para as seções, fazer aparecer texto de acordo com a imagem clicada, fazer o accordion para a seção de FAQ, fazer com que as seções apareçam suavemente conforme o scroll do usuário pela página e o menu drop-down. Além disso, o slide de fotos foi criado de forma separada e adicionado ao projeto, FETCH foi utilizado para acessar aos números dos animais e o valor da bitcoin, há um cálculo feito no horário de funcionamento da loja e o horário local da máquina para verificar se a loja está aberta ou não, uma tooltip para inserir informação extra sobre o mapa e um modal para login. Grande parte do projeto foi refatorado e transformado em classes para que os módulos possam ser utilizados em outros projetos.</p>
+    <p>A página é <span class="cor-p7">responsiva</span>.</p>
+  desc_en: |
+    <p>The Animais Fantasticos project was elaborated within the Complete JavaScript ES6 course at Origamid.</p>
+    <p><span class="cor-p5">HTML, CSS and JavaScript</span> were used to draw the pages and code them.</p>
+    <p>JavaScript was used to adjust the softer scroll that led to sections, to make the text appear according to the chosen image, to make the accordion for the FAQ section, to make the sections appear with the user's scroll movement through the page and the drop-down menu. Besides, the photo slide was created separately and added to the project, FETCH was used to access the number of animals and the value of bitcoin, there is a calculus being performed in the opening hours to check if the company is open or not, a tooltip was added in the map to show additional information and there is a modal with a login window. The majority of the project was refactored and transformed into classes so the modules could be used in other projects.</p>
+    <p>The page is <span class="cor-p7">responsive</span>.</p>
+
+- id: surfbot
+  title_pt: Surfbot
+  title_en: Surfbot
+  tags: [html, css, figma]
+  github: https://github.com/ericthmoritsuka/surfbot
+  site: https://ericthmoritsuka.github.io/surfbot/
+  images:
+    - src: /img/portfolio/surfbot.jpg
+      alt: Screenshot surfbot
+  desc_pt: |
+    <p>O projeto Surfbot foi elaborado dentro do curso de UI Design avançado da Origamid.</p>
+    <p>Nele foram utilizados <span class="cor-p5">Figma, HTML e CSS</span> para desenhar e codificar a página.</p>
+    <p>A página é <span class="cor-p7">responsiva</span>.</p>
+  desc_en: |
+    <p>The Surfbot project was elaborated within the Advanced UI Design course at Origamid.</p>
+    <p><span class="cor-p5">Figma, HTML and CSS</span> were used in it to design and code the page.</p>
+    <p>The page is <span class="cor-p7">responsive</span>.</p>
+
+- id: flexblog
+  title_pt: Flexblog
+  title_en: Flexblog
+  tags: [html, css]
+  github: https://github.com/ericthmoritsuka/flexblog
+  site: https://ericthmoritsuka.github.io/flexblog/
+  images:
+    - src: /img/portfolio/flexblog.jpg
+      alt: Screenshot Flexblog
+  desc_pt: |
+    <p>O projeto Flexblog foi elaborado dentro do curso de CSS: Flexbox da Origamid.</p>
+    <p>Nele foram utilizados <span class="cor-p5">HTML e CSS (com foco no display Flex)</span> para codificar a página.</p>
+    <p>A página é <span class="cor-p7">responsiva</span>.</p>
+  desc_en: |
+    <p>The Flexblog project was elaborated within the CSS: Flexbox course at Origamid.</p>
+    <p><span class="cor-p5">HTML and CSS (CSS display: Flex)</span> were used to code the page.</p>
+    <p>The page is <span class="cor-p7">responsive</span>.</p>
+
+- id: wildbeast
+  title_pt: Wildbeast
+  title_en: Wildbeast
+  tags: [html, css]
+  github: https://github.com/ericthmoritsuka/wildbeast
+  site: https://ericthmoritsuka.github.io/wildbeast/
+  images:
+    - src: /img/portfolio/wildbeast.jpg
+      alt: Screenshot Wildbeast
+  desc_pt: |
+    <p>O projeto Wildbeast foi elaborado dentro do curso de CSS: Grid Layout da Origamid.</p>
+    <p>Nele foram utilizados <span class="cor-p5">HTML e CSS (com foco no display Grid)</span> para codificar a página.</p>
+    <p>A página é <span class="cor-p7">responsiva</span>.</p>
+  desc_en: |
+    <p>The Wildbeast project was elaborated within the CSS: Grid Layout course at Origamid.</p>
+    <p><span class="cor-p5">HTML and CSS (CSS display: Grid)</span> were used to code the page.</p>
+    <p>The page is <span class="cor-p7">responsive</span>.</p>
+
+- id: appsJS
+  title_pt: Elementos com JS
+  title_en: Elements with JS
+  tags: [js, html, css]
+  github: https://github.com/ericthmoritsuka/AppsComJS
+  site: https://ericthmoritsuka.github.io/AppsComJS/
+  images:
+    - src: /img/portfolio/appsJS.jpg
+      alt: Screenshot Apps com JS
+  desc_pt: |
+    <p>O projeto Elementos com JavaScript foi elaborado dentro do curso de JavaScript da Origamid.</p>
+    <p>Nele foram utilizados <span class="cor-p5">HTML e CSS, mas o foco foi utilizar o JavaScript para criar diferentes elementos.</span></p>
+    <p>Os elementos criados são: 1 - Um criador de botões onde é possível copiar o código CSS gerado a partir do que foi criado; 2 - Um cronômetro que inicia, pausa e pode ser resetado; 3 - Um dado que gera valores aleatórios quando clicado; 4 - Um elemento que utiliza FETCH para buscar informações sobre o preço do BITCOIN em reais; 5 - Um elemento que utiliza FETCH para buscar um CEP informado e retorna dados sobre o CEP; 6 - Um elemento que utiliza FETCH para buscar piadas sobre o Chuck Norris que retorna uma piada diferente quando clicado o botão de Next Joke.</p>
+    <p>A página é <span class="cor-p7">responsiva</span>.</p>
+  desc_en: |
+    <p>The Elements with JavaScript project was elaborated within the JavaScript Course at Origamid.</p>
+    <p><span class="cor-p5">HTML and CSS were used,</span> but the main goal was to use <span class="cor-p5">JavaScript</span> in order to create different elements.</p>
+    <p>Here is a list of the elements: 1 - a button generator in which it is possible to copy the CSS code generated from the choices made; 2 - a timer that starts, pauses, resets and stops; 3 - a die that generates random values when clicked; 4 - an element that uses FETCH to get information about the price of bitcoins in Reais (R$); 5 - an element that uses FETCH to get information on a provided CEP (address code); 6 - an element that uses FETCH to get Chuck Norris' jokes.</p>
+    <p>The page is <span class="cor-p7">responsive</span>.</p>
+
+- id: expensesApp
+  title_pt: expensesApp
+  title_en: expensesApp
+  tags: [js, react, css]
+  github: https://github.com/ericthmoritsuka/react-expensesApp
+  site: https://ericthmoritsuka.github.io/react-expensesApp/
+  images:
+    - src: /img/portfolio/react-expensesApp.jpg
+      alt: Screenshot expenses app
+  desc_pt: |
+    <p>O componente expensesApp foi elaborado dentro do curso de React da Udemy.</p>
+    <p>Nele foram utilizados <span class="cor-p5">React, JavaScript e CSS</span> para codificar e estilizar a página.</p>
+    <p>É um componente simples que recebe informações sobre despesas e as mostra em uma área. Ele também contém um filtro para selecionar despesas por ano e gráficos para comparar o total de gastos por mês.</p>
+  desc_en: |
+    <p>The expensesApp component was elaborated within a React course at Udemy.</p>
+    <p><span class="cor-p5">React, JavaScript and CSS</span> were used to code and style the page.</p>
+    <p>It is a simple component that receives information on expenses and shows them in another area. It also contains a filter to select the expenses per year and graphs are used to compare the amount spent within a month.</p>
+
+- id: loginAPP
+  title_pt: loginAPP
+  title_en: loginAPP
+  tags: [js, react, css]
+  github: https://github.com/ericthmoritsuka/react-loginApp
+  site: https://ericthmoritsuka.github.io/react-loginApp/
+  images:
+    - src: /img/portfolio/react-loginAppALT.jpg
+      alt: Screenshot login app
+    - src: /img/portfolio/react-loginApp2ALT.jpg
+      alt: Screenshot login app welcome screen
+  desc_pt: |
+    <p>O componente loginAPP foi elaborado dentro do curso de React da Udemy.</p>
+    <p>Nele foram utilizados <span class="cor-p5">React, JavaScript e CSS</span> para codificar e estilizar a página.</p>
+    <p>É um componente simples que recebe um usuário e uma senha. Ele faz uma checagem simples interna apenas para verificar se há um e-mail válido e uma senha de 7 caracteres. Caso o usuário use um login válido e atualize a página, a página continua com o login ativo. É preciso deslogar para que se possa logar novamente.</p>
+  desc_en: |
+    <p>The loginAPP component was elaborated within a React course at Udemy.</p>
+    <p><span class="cor-p5">React, JavaScript and CSS</span> were used to code and style the page.</p>
+    <p>It is a simple component that receives an email and a password. It checks the email internally and if the password contains 7 characters to see if they are valid inputs. If the user uses a valid login and reloads, the page keeps the login active. You need to logout so you can login again.</p>
+
+- id: goalApp
+  title_pt: goalApp
+  title_en: goalApp
+  tags: [js, react, css]
+  github: https://github.com/ericthmoritsuka/react-goalApp
+  site: https://ericthmoritsuka.github.io/react-goalApp/
+  images:
+    - src: /img/portfolio/react-goalAppALT.jpg
+      alt: Screenshot goal app
+  desc_pt: |
+    <p>O componente goalApp foi elaborado dentro do curso de React da Udemy.</p>
+    <p>Nele foram utilizados <span class="cor-p5">React, JavaScript e CSS</span> para codificar e estilizar a página.</p>
+    <p>É um componente simples que recebe objetivos e os mostra abaixo em um outro campo. Ao clicarmos em um objetivo, ele é excluído.</p>
+  desc_en: |
+    <p>The goalApp component was elaborated within a React course at Udemy.</p>
+    <p><span class="cor-p5">React, JavaScript and CSS</span> were used to code and style the page.</p>
+    <p>It is a simple component that receives goals and shows them in another field. When we click on a goal, it is deleted.</p>
+
+- id: usersApp
+  title_pt: usersApp
+  title_en: usersApp
+  tags: [js, react, css]
+  github: https://github.com/ericthmoritsuka/react-usersApp
+  site: https://ericthmoritsuka.github.io/react-usersApp/
+  images:
+    - src: /img/portfolio/react-usersAppALT.jpg
+      alt: Screenshot users app
+  desc_pt: |
+    <p>O componente usersApp foi elaborado dentro do curso de React da Udemy.</p>
+    <p>Nele foram utilizados <span class="cor-p5">React, JavaScript e CSS</span> para codificar e estilizar a página.</p>
+    <p>É um componente simples que recebe um usuário e sua idade e os mostra em uma área abaixo do campo. Caso nada seja colocado nos campos ou uma idade negativa seja colocada no campo, uma mensagem de erro aparece em formato pop-up.</p>
+  desc_en: |
+    <p>The usersApp component was elaborated within a React course at Udemy.</p>
+    <p><span class="cor-p5">React, JavaScript and CSS</span> were used to code and style the page.</p>
+    <p>It is a simple component that receives a user and their age and shows the information in another field. If a negative age is provided or nothing is added to the input, error messages will pop-up.</p>
+
+- id: produtosApp
+  title_pt: produtosApp
+  title_en: produtosApp
+  tags: [js, react, css]
+  github: https://github.com/ericthmoritsuka/react-produtosApp
+  site: https://ericthmoritsuka.github.io/react-produtosApp/
+  images:
+    - src: /img/portfolio/react-produtosApp.jpg
+      alt: Screenshot produtos app
+    - src: /img/portfolio/react-produtosApp2.jpg
+      alt: Screenshot produtos app product details
+  desc_pt: |
+    <p>O componente produtosApp foi elaborado dentro do curso de React da Origamid.</p>
+    <p>Nele foram utilizados <span class="cor-p5">React, JavaScript e CSS</span> para codificar e estilizar a página.</p>
+    <p>É um componente simples que usa react-router-dom para estabelecer rotas dentro da aplicação. Também usa FETCH para buscar informação sobre produtos em uma API de um curso da Origamid. Ele usa a informação encontrada para mostrar na tela fotos e detalhes de cada produto disponível na API.</p>
+  desc_en: |
+    <p>The produtosApp component is a simple exercise created during the React course from Origamid.</p>
+    <p><span class="cor-p5">React, JavaScript and CSS</span> were used to code and style the page.</p>
+    <p>It is a simple component. It uses react-router-dom to use routes in the pages and it uses fetch to gather information on products from an API from a course at Origamid. It uses this information to show on the screen photos and details for each product available in the API.</p>
+
+- id: questionarioApp
+  title_pt: testApp
+  title_en: testApp
+  tags: [js, react, css]
+  github: https://github.com/ericthmoritsuka/react-questionarioApp
+  site: https://ericthmoritsuka.github.io/react-questionarioApp/
+  images:
+    - src: /img/portfolio/react-questionarioApp.jpg
+      alt: Screenshot questionario app
+  desc_pt: |
+    <p>O componente testApp (questionarioApp) é um exercício simples elaborado dentro do curso de React da Origamid.</p>
+    <p>Nele foram utilizados <span class="cor-p5">React, JavaScript e CSS</span> para codificar e estilizar a página.</p>
+    <p>É um componente simples que possui 4 perguntas, recebe as respostas do usuário, atualiza tudo reativamente, conta a quantidade de acertos (ele considera respostas em branco como erradas) e retorna o resultado ao final.</p>
+  desc_en: |
+    <p>The testApp (questionarioApp) component is a simple exercise created during the React course from Origamid.</p>
+    <p><span class="cor-p5">React, JavaScript and CSS</span> were used to code and style the page.</p>
+    <p>It is a simple component. It contains 4 questions, it receives the user's input, updates it all reactively, counts the amount of correct responses (it considers blank answers as wrong answers) and provides the final result for the user.</p>
+
+- id: formularioApp
+  title_pt: formApp
+  title_en: formApp
+  tags: [js, react, css]
+  github: https://github.com/ericthmoritsuka/react-formularioApp
+  site: https://ericthmoritsuka.github.io/react-formularioApp/
+  images:
+    - src: /img/portfolio/react-formularioApp.jpg
+      alt: Screenshot formulario app
+  desc_pt: |
+    <p>O componente formApp (formularioApp) é um exercício simples elaborado dentro do curso de React da Origamid.</p>
+    <p>Nele foram utilizados <span class="cor-p5">React, JavaScript e CSS</span> para codificar e estilizar a página.</p>
+    <p>É um componente simples que trabalha com FORM e diferentes tipos de INPUT. É possível selecionar elementos de um suposto produto e podemos visualizar as informações selecionadas antes de enviar o formulário.</p>
+  desc_en: |
+    <p>The formApp (formularioApp) component is a simple exercise created during the React course from Origamid.</p>
+    <p><span class="cor-p5">React, JavaScript and CSS</span> were used to code and style the page.</p>
+    <p>It is a simple component that uses FORM and different INPUTS. It is possible to select elements from an imaginary product and we can view the selected elements before submitting the form.</p>
+
+- id: pokedex
+  title_pt: Pokedex
+  title_en: Pokedex
+  tags: [html, css, js]
+  github: https://github.com/ericthmoritsuka/pokedex
+  site: https://ericthmoritsuka.github.io/pokedex/
+  images:
+    - src: /img/portfolio/pokedex.jpg
+      alt: Screenshot Pokedex
+  desc_pt: |
+    <p>O projeto Pokedex é uma versão simples onde, ao clicarmos no thumbnail de um dos Pokémons, temos como resultado algumas informações como seu número na pokedex, tipo, foto, status e moves.</p>
+    <p>Nesse projeto foram utilizados <span class="cor-p5">HTML, CSS e JavaScript</span> para desenhar as páginas e codificá-las.</p>
+    <p>A página é <span class="cor-p7">responsiva</span>.</p>
+  desc_en: |
+    <p>The Pokedex project is a simple version where we can get information (such as pokedex number, type, photo, status and moves) on a given Pokémon when we click on its thumbnail.</p>
+    <p><span class="cor-p5">HTML, CSS and JavaScript</span> were used to design and code the page.</p>
+    <p>The page is <span class="cor-p7">responsive</span>.</p>
+
+- id: rpgTrapalhoes
+  title_pt: "RPG: Os Trapalhões"
+  title_en: "RPG: Os Trapalhões"
+  tags: [html, css, js]
+  github: https://github.com/ericthmoritsuka/trapalhoesIlhaDosDinossauros
+  site: https://ericthmoritsuka.github.io/trapalhoesIlhaDosDinossauros/
+  images:
+    - src: /img/portfolio/osTrapalhoes.jpg
+      alt: "Screenshot RPG: Os Trapalhões"
+    - src: /img/portfolio/osTrapalhoes3.jpg
+      alt: ""
+    - src: /img/portfolio/osTrapalhoes1.jpg
+      alt: ""
+  desc_pt: |
+    <p>O projeto RPG: As Aventuras dos Trapalhões - A ilha dos Dinossauros é uma releitura de uma revistinha de 1993 dos Trapalhões que continha uma historinha RPG do tipo aventura de texto.</p>
+    <p>Nela, era possível passar pela história e enfrentar desafios, atacar inimigos, sofrer penalidades, ser derrotado, ser vitorioso e recomeçar o jogo quantas vezes fossem necessárias para chegar até o final da aventura!</p>
+    <p>O objetivo era fazer uma versão virtual (não é a versão final ainda, ainda quero implementar mais coisas) para que o meu irmãozinho pudesse jogar.</p>
+    <p>Assim, eu editei algumas coisas na história e troquei alguns termos para que ficasse mais fácil para ele entender e para que ele se interessasse pela história.</p>
+    <p>Nesse projeto foram utilizados <span class="cor-p5">HTML, CSS e JavaScript</span> para desenhar as páginas e para codificá-las. O código é super simples, pois o foco era na história e recortar e colar as figuras e montar todas as ramificações da história foi trabalhoso.</p>
+    <p>As páginas são <span class="cor-p7">responsivas</span>.</p>
+  desc_en: |
+    <p>The RPG: As Aventuras dos Trapalhões - A ilha dos Dinossauros project is a text adventure based on a 1993 Os Trapalhões magazine.</p>
+    <p>It was possible to go through the story, face challenges, attack enemies, suffer penalties, be defeated, be victorious and restart the game as many times as necessary in order to get to the end of the adventure!</p>
+    <p>The goal was to make an updated virtual version (it is still not a final version, I still want to implement more elements) so my little brother could play it (he didn't do it much though... as there is much reading involved...).</p>
+    <p>So, I edited some things in the story and changed some terms used to make it easier to follow the story and to make him more interested in it.</p>
+    <p><span class="cor-p5">HTML, CSS and JavaScript</span> were used to draw and code the pages. The code is super simple because the main focus was on the story. So, it is basically just a copy and paste of pictures and organizing them. However, it was a lot of work to place them in the correct order.</p>
+    <p>The pages are <span class="cor-p7">responsive</span>.</p>
+
+- id: behance
+  title_pt: Meu portfólio no Behance
+  title_en: My portfolio at Behance
+  tags: []
+  site: https://www.behance.net/ethm
+  images:
+    - src: /img/portfolio/behance.jpg
+      alt: Screenshot Behance
+  desc_pt: |
+    <p>No meu portfólio disponível no site da Behance (Adobe) é possível visualizar alguns trabalhos com arte digital/ilustração/sound design/animação/fotografia que eu elaborei durante esses anos.</p>
+  desc_en: |
+    <p>In my portfolio at Behance (Adobe) it is possible to check some of my works with digital art/illustration/sound design/animation/photography that I have created throughout the years.</p>
