@@ -276,18 +276,20 @@
   site: https://ericthmoritsuka.github.io/pokedex/
   images:
     - src: /img/portfolio/pokedex.jpg
-      alt: Screenshot Pokedex aberta mostrando o Pikachu
+      alt: Screenshot da Pokédex aberta mostrando o Charizard
     - src: /img/portfolio/pokedex2.jpg
-      alt: Screenshot Pokedex fechada
+      alt: Screenshot do Rotom com o jogo de adivinhar o Pokémon
   desc_pt: |
     <p>O projeto Pokedex simula o aparelho "de verdade": o site carrega com a Pokédex fechada e, ao clicar, ela se abre revelando a lista com todos os 1025 Pokémons de um lado e as informações do Pokémon selecionado do outro (em telas de celular, as duas metades se empilham na vertical).</p>
-    <p>Todos os dados vêm da <span class="cor-p5">PokéAPI</span>: descrição, status, golpes com nível, cadeia de evolução clicável, arte shiny e até o grito de cada Pokémon. Há busca por nome ou número e links diretos (por exemplo, <code>#25</code> abre direto no Pikachu).</p>
-    <p>Nesse projeto foram utilizados <span class="cor-p5">HTML, CSS e JavaScript</span> (módulos ES, sem frameworks). A ideia e a implementação original são minhas; as melhorias recentes (integração com a PokéAPI, o visual de aparelho e as abas de informações) foram feitas com assistência de IA (Claude), com a co-autoria marcada nos commits do GitHub.</p>
+    <p>Todos os dados vêm da <span class="cor-p5">PokéAPI</span>: descrição, status, golpes com nível, cadeia de evolução clicável, formas regionais (como o Vulpix de Alola), fraquezas e resistências de tipo, arte shiny e até o grito de cada Pokémon. Há busca por nome ou número, filtro por gerações e links diretos (por exemplo, <code>#25</code> abre direto no Pikachu).</p>
+    <p>Um segundo aparelho, inspirado na RotomDex, reúne os minijogos: adivinhe o Pokémon pela silhueta ou pelo grito, monte sua equipe de seis, compare os status de dois Pokémon e tente nomear todos os Pokémon de uma geração contra o relógio.</p>
+    <p>Nesse projeto foram utilizados <span class="cor-p5">HTML, CSS e JavaScript</span> (módulos ES, sem frameworks). A ideia e a implementação original são minhas; as melhorias recentes (integração com a PokéAPI, os aparelhos e os minijogos) foram feitas com assistência de IA (Claude), com a co-autoria marcada nos commits do GitHub.</p>
     <p>A página é <span class="cor-p7">responsiva</span>.</p>
   desc_en: |
     <p>The Pokedex project simulates the real device: the site loads with the Pokédex closed and, once clicked, it flips open revealing the list with all 1025 Pokémon on one side and the selected Pokémon's information on the other (on phone screens, the two halves stack vertically).</p>
-    <p>All the data comes from <span class="cor-p5">PokéAPI</span>: description, stats, moves with learn levels, a clickable evolution chain, shiny artwork and even each Pokémon's cry. You can search by name or number, and deep links work too (for instance, <code>#25</code> opens straight on Pikachu).</p>
-    <p><span class="cor-p5">HTML, CSS and JavaScript</span> (ES modules, no frameworks) were used in this project. The idea and the original implementation are mine; the recent improvements (the PokéAPI integration, the device look and the info tabs) were made with AI assistance (Claude), with the co-authorship marked on the GitHub commits.</p>
+    <p>All the data comes from <span class="cor-p5">PokéAPI</span>: description, stats, moves with learn levels, a clickable evolution chain, regional forms (like Alolan Vulpix), type weaknesses and resistances, shiny artwork and even each Pokémon's cry. You can search by name or number, filter by generation, and deep links work too (for instance, <code>#25</code> opens straight on Pikachu).</p>
+    <p>A second device, inspired by the RotomDex, hosts the minigames: guess the Pokémon by its silhouette or its cry, build your team of six, compare two Pokémon's stats, and try to name every Pokémon of a generation against the clock.</p>
+    <p><span class="cor-p5">HTML, CSS and JavaScript</span> (ES modules, no frameworks) were used in this project. The idea and the original implementation are mine; the recent improvements (the PokéAPI integration, the devices and the minigames) were made with AI assistance (Claude), with the co-authorship marked on the GitHub commits.</p>
     <p>The page is <span class="cor-p7">responsive</span>.</p>
 
 - id: rpgTrapalhoes
