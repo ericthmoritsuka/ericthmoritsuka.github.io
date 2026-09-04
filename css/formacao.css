@@ -10,7 +10,9 @@
 .bg-form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr) auto;
+  /* auto rows: the graduation row must not stretch to match the huge
+     courses list row, which made the boxes absurdly tall */
+  grid-template-rows: auto auto auto;
   gap: 40px;
   max-width: 1200px;
 }
@@ -41,41 +43,26 @@
 .graduacao{
   flex: 1;
   background-color: #424242;
-
   border-radius: 5px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  /* grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3fr; */
-  align-items: top;
-  /* min-width: auto; */
   position: relative;
-  gap: 15px;
+  gap: 12px;
+  min-width: 90px;
 }
 
 .titulo {
   color: var(--cor-p2);
-  flex: 1;
 }
 
 .curso {
-  flex: 1;
-}
-
-.graduacao {
-  min-width: 90px;
-}
-
-.instituicao {
+  /* pushes the institution to the bottom so boxes in a row line up */
   flex: 1;
 }
 
 .ano {
-  flex: 1;
   text-align: right;
-  grid-column: 2;
-  grid-row: 1;
 }
 
 .cursos {
