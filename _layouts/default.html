@@ -4,6 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		/* set the theme before styles load, so there is no light flash */
+		(function () {
+			var salvo = localStorage.getItem("tema");
+			var escuro = salvo ? salvo === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+			if (escuro) document.documentElement.dataset.theme = "dark";
+		})();
+	</script>
 	<link rel="stylesheet" href="/css/style.css">
 	<title>{{ page.title }}</title>
 	{% seo title=false %}
@@ -26,6 +34,7 @@
 	{% if page.blog_js %}<script src="/js/blog.js"></script>{% endif %}
 	{% for script in page.scripts %}<script src="{{ script }}"></script>
 	{% endfor %}
+	<script src="/js/theme.js"></script>
 	<script data-goatcounter="https://ericthmoritsuka.goatcounter.com/count"
 		async src="//gc.zgo.at/count.js"></script>
 </body>

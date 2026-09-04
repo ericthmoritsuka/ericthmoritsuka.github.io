@@ -1,106 +1,110 @@
-/* Dark mode. The header, footer, experience cards, and education boxes are
-   dark by design and need no changes; these rules only re-skin the zones
-   that are light in the default theme. Imported last so it wins ties. */
+/* Dark theme. Activated by data-theme="dark" on <html>, which js/theme.js
+   sets from the visitor's saved choice or, by default, the system
+   prefers-color-scheme. The header, footer, experience cards, and education
+   boxes are dark by design and need no changes. */
 
-@media (prefers-color-scheme: dark) {
-  body {
+html[data-theme="dark"] body {
     background-color: #161616;
     color: #e6e6e6;
   }
 
-  /* text utilities that assume a light background */
+html[data-theme="dark"] /* text utilities that assume a light background */
   .cor-8 { color: var(--cor-4); }
-  .cor-9 { color: var(--cor-3); }
-  .cor-10 { color: var(--cor-2); }
-  .cor-11 { color: var(--cor-1); }
 
-  /* dark-purple accents flip to their light counterparts */
+html[data-theme="dark"] .cor-9 { color: var(--cor-3); }
+
+html[data-theme="dark"] .cor-10 { color: var(--cor-2); }
+
+html[data-theme="dark"] .cor-11 { color: var(--cor-1); }
+
+html[data-theme="dark"] /* dark-purple accents flip to their light counterparts */
   .cor-p5 { color: var(--cor-p3); }
-  .cor-p6 { color: var(--cor-p2); }
-  .cor-p7 { color: var(--cor-p2); }
-  .cor-p9 { color: var(--cor-p1); }
 
-  /* profile page */
+html[data-theme="dark"] .cor-p6 { color: var(--cor-p2); }
+
+html[data-theme="dark"] .cor-p7 { color: var(--cor-p2); }
+
+html[data-theme="dark"] .cor-p9 { color: var(--cor-p1); }
+
+html[data-theme="dark"] /* profile page */
   .sobre-mim {
     background-color: #1f1f1f;
   }
 
-  /* skill dots: empty vs. filled contrast flips */
+html[data-theme="dark"] /* skill dots: empty vs. filled contrast flips */
   .pontos::before {
     background-image: radial-gradient(circle, #424242 8px, transparent 9px);
   }
-  .pontos::after {
+
+html[data-theme="dark"] .pontos::after {
     background-image: radial-gradient(circle, #dbdbdb 8px, transparent 9px);
   }
 
-  /* education section (hardcoded white in the light theme) */
+html[data-theme="dark"] /* education section (hardcoded white in the light theme) */
   .formacao {
     background-color: #161616;
     color: #e6e6e6;
   }
 
-  /* blog list + post pages */
-  .post:nth-child(odd),
-  .sobre-bg:nth-child(odd) {
+html[data-theme="dark"] /* blog list + post pages */
+  .post:nth-child(odd), html[data-theme="dark"] .sobre-bg:nth-child(odd) {
     background-color: #1f1f1f;
   }
-  .sobre-info p,
-  .cartao-descricao p {
+
+html[data-theme="dark"] .sobre-info p, html[data-theme="dark"] .cartao-descricao p {
     color: #a8a8a8;
   }
 
-  /* buttons and text links share one dark treatment */
-  .post-link,
-  .post-nav-link,
-  .cartao-botao,
-  .links-404 a,
-  .sobre-info a {
+html[data-theme="dark"] /* buttons and text links share one dark treatment */
+  .post-link, html[data-theme="dark"] .post-nav-link, html[data-theme="dark"] .cartao-botao, html[data-theme="dark"] .links-404 a, html[data-theme="dark"] .sobre-info a {
     color: var(--cor-p2);
     border-color: var(--cor-p5);
   }
-  .post-link:hover,
-  .post-nav-link:hover,
-  .cartao-botao:hover,
-  .links-404 a:hover,
-  .sobre-info a:hover {
+
+html[data-theme="dark"] .post-link:hover, html[data-theme="dark"] .post-nav-link:hover, html[data-theme="dark"] .cartao-botao:hover, html[data-theme="dark"] .links-404 a:hover, html[data-theme="dark"] .sobre-info a:hover {
     background-color: var(--cor-p6);
     border-color: var(--cor-p4);
     color: var(--cor-p1);
   }
 
-  /* portfolio carousel */
+html[data-theme="dark"] /* portfolio carousel */
   .cartao {
     background-color: #1f1f1f;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
   }
-  .cartao-media {
+
+html[data-theme="dark"] .cartao-media {
     background-color: #262626;
   }
-  .carrossel-seta {
+
+html[data-theme="dark"] .carrossel-seta {
     background-color: var(--cor-p6);
   }
-  .carrossel-seta:hover {
+
+html[data-theme="dark"] .carrossel-seta:hover {
     background-color: var(--cor-p4);
   }
-  .carrossel-seta:disabled:hover {
+
+html[data-theme="dark"] .carrossel-seta:disabled:hover {
     background-color: var(--cor-p6);
   }
-  .carrossel-ponto.ativo {
+
+html[data-theme="dark"] .carrossel-ponto.ativo {
     background-color: var(--cor-p3);
   }
 
-  /* 404: keep the scene on its light "postcard" so the ink signature shows */
+html[data-theme="dark"] /* 404: keep the scene on its light "postcard" so the ink signature shows */
   .frase-404 {
     color: var(--cor-2);
   }
-  .pagina-404 .cena-404 {
+
+html[data-theme="dark"] .pagina-404 .cena-404 {
     background-color: #fafafa;
     border-radius: 5px;
   }
 
-  @media (max-width: 600px) {
-    .lista-de-linguas {
+@media (max-width: 600px) {
+  html[data-theme="dark"] .lista-de-linguas {
       color: var(--cor-p2);
     }
-  }
 }
