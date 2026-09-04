@@ -1,0 +1,25 @@
+title: Eric Moritsuka
+description: "Technical Writer based in Recife (PE)"
+url: "https://ericthmoritsuka.github.io"
+timezone: America/Recife
+
+# Keep the same URLs the old hand-written pages had.
+permalink: "/blog-posts/:title.html"
+
+# Every post gets the dark header, no footer, and the tag-coloring script,
+# so post files only need title/tags/image front matter.
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      lang: en
+      header_dark: true
+      hide_footer: true
+      blog_js: true
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
