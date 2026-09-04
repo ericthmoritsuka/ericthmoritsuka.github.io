@@ -93,15 +93,25 @@ html[data-theme="dark"] .carrossel-ponto.ativo {
     background-color: var(--cor-p3);
   }
 
-html[data-theme="dark"] /* 404: keep the scene on its light "postcard" so the ink signature shows */
-  .frase-404 {
-    color: var(--cor-2);
-  }
+/* 404: swap to the scene variant whose signature is inked for dark */
+html[data-theme="dark"] .frase-404 {
+  color: var(--cor-2);
+}
 
-html[data-theme="dark"] .pagina-404 .cena-404 {
-    background-color: #fafafa;
-    border-radius: 5px;
+html[data-theme="dark"] .cena-404-claro {
+  display: none;
+}
+
+html[data-theme="dark"] .cena-404-escuro {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  html[data-theme="dark"] .header a,
+  html[data-theme="dark"] .header .tema-toggle {
+    background-color: #262626;
   }
+}
 
 @media (max-width: 600px) {
   html[data-theme="dark"] .lista-de-linguas {

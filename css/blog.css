@@ -352,6 +352,10 @@
   text-align: center;
 }
 
+.cena-404-escuro {
+  display: none;
+}
+
 .pagina-404 .cena-404 {
   width: 100%;
   height: auto;
