@@ -12,6 +12,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Keep the same URLs the old hand-written pages had.
 permalink: "/blog-posts/:title.html"
