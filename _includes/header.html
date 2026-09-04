@@ -1,0 +1,36 @@
+<header class="header{% if page.header_dark %} escuro{% endif %}">
+	<div class="atualizado">
+		<p class="font-atualizacao {% if page.header_dark %}cor-6{% else %}cor-11{% endif %}">
+			{%- if page.lang == "pt-br" %}Atualizado pela última vez em: {% include date-pt.html date=site.time %}
+			{%- else %}Last updated on: {% include date-en.html date=site.time %}
+			{%- endif %}
+		</p>
+	</div>
+
+	<nav aria-label="{% if page.lang == 'pt-br' %}principal{% else %}primary{% endif %}">
+		<ul class="menu font-2-s{% unless page.header_dark %} cor-10{% endunless %}">
+		{%- if page.lang == "pt-br" %}
+			{%- unless page.is_profile %}
+			<li><a href="/index.html">Perfil</a></li>
+			{%- endunless %}
+			<li><a href="/index.html#experiencia">Experiência</a></li>
+			<li><a href="/index.html#formacao">Formação</a></li>
+			<li><a href="{% if page.hide_footer %}/index.html#contato{% else %}#contato{% endif %}">Contato</a></li>
+			<li><a href="/portfolio.html">Portfólio</a></li>
+			<li><a href="/blog.html">Blog</a></li>
+		{%- else %}
+			{%- unless page.is_profile %}
+			<li><a href="/indexEnglish.html">Profile</a></li>
+			{%- endunless %}
+			<li><a href="/indexEnglish.html#experience">Experience</a></li>
+			<li><a href="/indexEnglish.html#education">Education</a></li>
+			<li><a href="{% if page.hide_footer %}/indexEnglish.html#contact{% else %}#contact{% endif %}">Contact</a></li>
+			<li><a href="/portfolioEnglish.html">Portfolio</a></li>
+			<li><a href="/blog.html">Blog</a></li>
+		{%- endif %}
+		{%- if page.lang_switch_url %}
+			<li><a href="{{ page.lang_switch_url }}">{{ page.lang_switch_label }}</a></li>
+		{%- endif %}
+		</ul>
+	</nav>
+</header>

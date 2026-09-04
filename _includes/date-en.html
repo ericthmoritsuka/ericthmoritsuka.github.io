@@ -1,0 +1,10 @@
+{%- comment -%}
+Formats a date as "June 2nd, 2026". Usage: {% include date-en.html date=page.date %}
+{%- endcomment -%}
+{%- assign d = include.date | date: "%-d" | plus: 0 -%}
+{%- assign sfx = "th" -%}
+{%- if d == 1 or d == 21 or d == 31 -%}{%- assign sfx = "st" -%}
+{%- elsif d == 2 or d == 22 -%}{%- assign sfx = "nd" -%}
+{%- elsif d == 3 or d == 23 -%}{%- assign sfx = "rd" -%}
+{%- endif -%}
+{{ include.date | date: "%B" }} {{ d }}{{ sfx }}, {{ include.date | date: "%Y" }}

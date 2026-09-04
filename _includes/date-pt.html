@@ -1,0 +1,19 @@
+{%- comment -%}
+Formats a date as "23 de abril de 2026". Usage: {% include date-pt.html date=site.time %}
+{%- endcomment -%}
+{%- assign m = include.date | date: "%-m" | plus: 0 -%}
+{%- case m -%}
+{%- when 1 -%}{%- assign mes = "janeiro" -%}
+{%- when 2 -%}{%- assign mes = "fevereiro" -%}
+{%- when 3 -%}{%- assign mes = "março" -%}
+{%- when 4 -%}{%- assign mes = "abril" -%}
+{%- when 5 -%}{%- assign mes = "maio" -%}
+{%- when 6 -%}{%- assign mes = "junho" -%}
+{%- when 7 -%}{%- assign mes = "julho" -%}
+{%- when 8 -%}{%- assign mes = "agosto" -%}
+{%- when 9 -%}{%- assign mes = "setembro" -%}
+{%- when 10 -%}{%- assign mes = "outubro" -%}
+{%- when 11 -%}{%- assign mes = "novembro" -%}
+{%- when 12 -%}{%- assign mes = "dezembro" -%}
+{%- endcase -%}
+{{ include.date | date: "%-d" }} de {{ mes }} de {{ include.date | date: "%Y" }}

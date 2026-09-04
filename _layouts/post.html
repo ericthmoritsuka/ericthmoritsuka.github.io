@@ -1,0 +1,38 @@
+---
+layout: default
+---
+	<a href="/blog.html" class="voltar-blog">
+		Back to blog
+	</a>
+
+	<main>
+
+		<div class="post-banner">
+			<img src="{{ page.image }}" alt="{{ page.image_alt }}">
+		</div>
+
+		<section class="sobre-bg">
+			<div class="sobre">
+
+				<div class="sobre-info">
+
+					<h1 class="font-grande">
+						{{ page.title }}
+					</h1>
+
+					<ul class="post-tags">
+						{% for tag in page.tags %}<li class="tag">{{ tag }}</li>
+						{% endfor %}
+					</ul>
+
+					<p class="font-atualizacao cor-6">
+						{% include date-en.html date=page.date %}
+					</p>
+
+{{ content }}
+
+				</div>
+
+			</div>
+		</section>
+	</main>
