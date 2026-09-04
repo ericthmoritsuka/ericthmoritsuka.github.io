@@ -31,6 +31,7 @@
 		{%- if page.lang_switch_url %}
 			<li><a href="{{ page.lang_switch_url }}">{{ page.lang_switch_label }}</a></li>
 		{%- endif %}
+			<li><button type="button" class="tema-toggle" aria-label="{% if page.lang == 'pt-br' %}Alternar tema claro/escuro{% else %}Toggle light/dark theme{% endif %}">☾</button></li>
 		</ul>
 	</nav>
 </header>
