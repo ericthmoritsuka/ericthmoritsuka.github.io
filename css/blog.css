@@ -149,6 +149,9 @@
   margin: 24px 0;
   display: grid;
   gap: 16px;
+  /* span the full text column: .sobre-info is a 2-column grid (portfolio.css)
+     and lists would otherwise be squeezed into half the card width */
+  grid-column: 1 / -1;
 }
 
 .post-page .sobre-info ul:not(.post-tags) li {

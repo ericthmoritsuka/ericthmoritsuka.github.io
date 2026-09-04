@@ -1,0 +1,62 @@
+{%- comment -%}
+Project carousel, built from _data/projects.yml.
+Language comes from page.lang (pt-br or en).
+{%- endcomment -%}
+{%- assign lang_pt = false -%}
+{%- if page.lang == "pt-br" -%}{%- assign lang_pt = true -%}{%- endif -%}
+<section class="carrossel" aria-label="{% if lang_pt %}Projetos do portfólio{% else %}Portfolio projects{% endif %}">
+
+	<ul class="carrossel-trilho" tabindex="0">
+	{%- for p in site.data.projects %}
+		<li class="cartao" id="{{ p.id }}">
+			<div class="cartao-media">
+				<a href="{{ p.site }}" target="_blank" rel="noopener">
+					<img class="cartao-img" src="{{ p.images[0].src }}" alt="{{ p.images[0].alt }}" loading="lazy">
+				</a>
+				{%- if p.images.size > 1 %}
+				<div class="cartao-thumbs">
+					{%- for im in p.images %}
+					<button type="button" class="cartao-thumb{% if forloop.first %} ativo{% endif %}" data-src="{{ im.src }}" data-alt="{{ im.alt }}" aria-label="Screenshot {{ forloop.index }}">
+						<img src="{{ im.src }}" alt="" loading="lazy">
+					</button>
+					{%- endfor %}
+				</div>
+				{%- endif %}
+			</div>
+
+			<div class="cartao-corpo">
+				<div class="cartao-cabecalho">
+					<h2 class="cartao-titulo">{% if lang_pt %}{{ p.title_pt }}{% else %}{{ p.title_en }}{% endif %}</h2>
+					{%- if p.tags.size > 0 %}
+					<ul class="code-tags cartao-tags">
+						{%- for t in p.tags %}
+						<li class="tag-{{ t }}">{% case t %}{% when 'html' %}HTML{% when 'css' %}CSS{% when 'js' %}JavaScript{% when 'react' %}React{% when 'figma' %}Figma{% endcase %}</li>
+						{%- endfor %}
+					</ul>
+					{%- endif %}
+				</div>
+
+				<div class="cartao-descricao">
+					{% if lang_pt %}{{ p.desc_pt }}{% else %}{{ p.desc_en }}{% endif %}
+				</div>
+
+				<div class="cartao-links">
+					{%- if p.github %}
+					<a class="cartao-botao" href="{{ p.github }}" target="_blank" rel="noopener">{% if lang_pt %}CÓDIGO NO GITHUB{% else %}SOURCE CODE AT GITHUB{% endif %}</a>
+					{%- endif %}
+					<a class="cartao-botao" href="{{ p.site }}" target="_blank" rel="noopener">{% if lang_pt %}LINK PARA A PÁGINA{% else %}LINK FOR THE PAGE{% endif %}</a>
+				</div>
+			</div>
+		</li>
+	{%- endfor %}
+	</ul>
+
+	<button type="button" class="carrossel-seta seta-prev" aria-label="{% if lang_pt %}Projeto anterior{% else %}Previous project{% endif %}">&#8249;</button>
+	<button type="button" class="carrossel-seta seta-next" aria-label="{% if lang_pt %}Próximo projeto{% else %}Next project{% endif %}">&#8250;</button>
+
+	<div class="carrossel-pontos">
+	{%- for p in site.data.projects %}
+		<button type="button" class="carrossel-ponto{% if forloop.first %} ativo{% endif %}" data-index="{{ forloop.index0 }}" aria-label="{% if lang_pt %}{{ p.title_pt }}{% else %}{{ p.title_en }}{% endif %}"></button>
+	{%- endfor %}
+	</div>
+</section>
