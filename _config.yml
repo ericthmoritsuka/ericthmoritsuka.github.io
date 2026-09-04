@@ -2,6 +2,16 @@ title: Eric Moritsuka
 description: "Enablement Engineer based in Recife (PE)"
 url: "https://ericthmoritsuka.github.io"
 timezone: America/Recife
+author: Eric Moritsuka
+logo: /img/favicon/favicon-512.png
+
+# All three are in GitHub Pages' built-in plugin set (no install needed):
+# jekyll-seo-tag -> Open Graph / Twitter cards, jekyll-feed -> /feed.xml,
+# jekyll-sitemap -> /sitemap.xml
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
 
 # Keep the same URLs the old hand-written pages had.
 permalink: "/blog-posts/:title.html"
@@ -9,6 +19,12 @@ permalink: "/blog-posts/:title.html"
 # Every post gets the dark header, no footer, and the tag-coloring script,
 # so post files only need title/tags/image front matter.
 defaults:
+  # Social-preview image for regular pages; posts set their own banner.
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      image: /img/perfil.jpg
   - scope:
       path: ""
       type: "posts"

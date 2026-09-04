@@ -1,8 +1,8 @@
 ---
 title: Excuse me, what do you do?
 tags: [Life, Work]
-image: /blog-posts/images/what-do-you-do.png
-image_alt: "Imagem do post"
+image: /blog-posts/images/what-do-you-do.jpg
+image_alt: "Illustration of a technical writer at a crowded workbench, surrounded by icons of the job's many hats: collaborating, engineering, investigating, designing, curating, and solving"
 ---
 I've been thinking about my job a lot lately. I'm a mid-level Technical Writer at a U.S.-based software company with an office in Recife, which is where I live. Honestly, I've been questioning what I do---whether it's still relevant or if it's finally time to find something else. Maybe I should just sell handcrafted goods at the beach. I don't know.
 
