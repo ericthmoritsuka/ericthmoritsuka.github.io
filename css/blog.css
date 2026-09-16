@@ -227,6 +227,9 @@
 /* Callout for post asides (kramdown: blockquote followed by `{: .note}`).
    Translucent blue so it reads on both the light and dark themes. */
 .post-page .note {
+  /* .sobre-info is a two-column grid (portfolio.css); paragraphs span it via
+     `grid-column: 1/-1`, so the note must too or it sits in one column. */
+  grid-column: 1 / -1;
   margin: 24px 0;
   padding: 12px 20px;
   border-left: 4px solid #4a90d9;
