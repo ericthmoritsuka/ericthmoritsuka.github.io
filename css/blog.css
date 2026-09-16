@@ -224,6 +224,20 @@
   box-sizing: border-box;
 }
 
+/* Callout for post asides (kramdown: blockquote followed by `{: .note}`).
+   Translucent blue so it reads on both the light and dark themes. */
+.post-page .note {
+  margin: 24px 0;
+  padding: 12px 20px;
+  border-left: 4px solid #4a90d9;
+  background: rgba(74, 144, 217, 0.08);
+  border-radius: 4px;
+}
+
+.post-page .note p {
+  margin: 0;
+}
+
 .sobre-info h1.font-grande {
   margin-top: 0;
   margin-bottom: 16px;
