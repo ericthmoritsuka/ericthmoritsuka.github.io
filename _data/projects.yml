@@ -271,6 +271,7 @@
 - id: pokedex
   title_pt: Pokedex
   title_en: Pokedex
+  ai_enhanced: true
   tags: [html, css, js]
   github: https://github.com/ericthmoritsuka/pokedex
   site: https://ericthmoritsuka.github.io/pokedex/
@@ -295,6 +296,7 @@
 - id: rpgTrapalhoes
   title_pt: "RPG: Os Trapalhões"
   title_en: "RPG: Os Trapalhões"
+  ai_enhanced: true
   tags: [html, css, js]
   github: https://github.com/ericthmoritsuka/trapalhoesIlhaDosDinossauros
   site: https://ericthmoritsuka.github.io/trapalhoesIlhaDosDinossauros/
@@ -319,6 +321,57 @@
     <p>So, I edited some things in the story and changed some terms used to make it easier to follow the story and to make him more interested in it.</p>
     <p><span class="cor-p5">HTML, CSS and JavaScript</span> were used to draw and code the pages. The code is super simple because the main focus was on the story. So, it is basically just a copy and paste of pictures and organizing them. However, it was a lot of work to place them in the correct order.</p>
     <p>The pages are <span class="cor-p7">responsive</span>.</p>
+
+- id: cachosDaClara
+  title_pt: Cachos da Clara
+  title_en: Cachos da Clara
+  tags: [css, react, ts, cloudflare]
+  ai_enhanced: true
+  site: https://cachosdaclara.com.br
+  images:
+    - src: /img/portfolio/cachosDaClara.jpg
+      alt: Tela inicial do Cachos da Clara, onde a cliente informa nome e telefone para começar uma conversa
+    - src: /img/portfolio/cachosDaClara2.jpg
+      alt: Tela de login do lado do salao
+  desc_pt: |
+    <p>O Cachos da Clara é o sistema de conversas e agendamento do salão de mesmo nome, em San Martin, Recife/PE. A ideia era tirar a agenda de dentro do WhatsApp sem obrigar ninguém a aprender uma ferramenta nova.</p>
+    <p>Do lado da cliente não existe cadastro: ela abre o site, digita nome e telefone e já está conversando. Um link seguro enviado por e-mail devolve a mesma conversa em qualquer aparelho depois.</p>
+    <p>Do lado do salão, em <code>/salao</code>, a cabeleireira tem <span class="cor-p5">Conversas, Agenda e Clientes</span> na mesma tela, mais os ajustes de serviços, horários de funcionamento, exportação em CSV e troca de senha.</p>
+    <p>Nesse projeto foram utilizados <span class="cor-p5">React, TypeScript, Vite e Cloudflare (Workers e D1)</span>. A aplicação inteira roda em um único Worker que serve a interface e a API, com banco SQLite no D1, e-mails de confirmação e notificações push. Não há outra infraestrutura envolvida.</p>
+    <p>A interface foi desenhada primeiro para o celular, que é onde as clientes de fato usam, e é <span class="cor-p7">responsiva</span>.</p>
+  desc_en: |
+    <p>Cachos da Clara is the conversation and appointment system for the hair salon of the same name, in San Martin, Recife/PE. The goal was to move scheduling out of WhatsApp without making anyone learn a new tool.</p>
+    <p>On the customer side there is no sign-up: she opens the site, types her name and phone number, and the conversation starts. A secure link sent by e-mail restores that same conversation on any device later.</p>
+    <p>On the salon side, at <code>/salao</code>, the owner gets <span class="cor-p5">Conversations, Agenda and Clients</span> in one place, plus settings for services, opening hours, CSV export and password.</p>
+    <p><span class="cor-p5">React, TypeScript, Vite and Cloudflare (Workers and D1)</span> were used in this project. The whole application runs on a single Worker serving both the UI and the API, backed by SQLite on D1, with confirmation e-mails and push notifications. There is no other infrastructure.</p>
+    <p>The interface was designed mobile-first, which is how the customers actually use it, and it is <span class="cor-p7">responsive</span>.</p>
+
+- id: hotaru
+  title_pt: Hotaru
+  title_en: Hotaru
+  tags: [html, css, js]
+  ai_enhanced: true
+  github: https://github.com/ericthmoritsuka/hotaru
+  site: https://ericthmoritsuka.github.io/hotaru/
+  images:
+    - src: /img/portfolio/hotaru.jpg
+      alt: Home da loja Hotaru, com o vaga-lume dourado e as cartas colecionaveis
+    - src: /img/portfolio/hotaru2.jpg
+      alt: Pagina de produto de um single graded
+    - src: /img/portfolio/hotaru3.jpg
+      alt: Catalogo com filtros por categoria, jogo e preco
+  desc_pt: |
+    <p>A Hotaru é uma maquete de loja virtual para um comércio de colecionáveis no Recife: selados (boosters, blisters e boxes), singles, acessórios de proteção (binders, sleeves, toploaders e playmats), photocards de K-Pop e chaveiros.</p>
+    <p>O projeto partiu de um guia de identidade visual pronto — azul-marinho, ouro metálico, verde-limão e marfim, com o vaga-lume dentro de uma carta — e a proposta era ver como aquela marca se comportaria numa loja de verdade, com <span class="cor-p5">17 páginas</span>: home, catálogo com filtros, doze páginas de produto, carrinho, sobre e ajuda.</p>
+    <p>Nesse projeto foram utilizados <span class="cor-p5">HTML, CSS e JavaScript</span>, sem framework e sem dependências. As molduras douradas das cartas, o padrão de losangos do fundo e os ícones de produto são todos CSS e SVG desenhados à mão; um script em Python monta as páginas a partir de um catálogo único, então preço e produto mudam num lugar só.</p>
+    <p>É um protótipo visual: nada de carrinho real, busca, login ou pagamento, e os produtos e preços são fictícios.</p>
+    <p>As páginas são <span class="cor-p7">responsivas</span>, pensadas primeiro para o celular.</p>
+  desc_en: |
+    <p>Hotaru is a storefront mockup for a collectibles shop in Recife, Brazil: sealed product (boosters, blisters and boxes), singles, protection accessories (binders, sleeves, toploaders and playmats), K-Pop photocards and keychains.</p>
+    <p>The project started from an existing brand guide — navy, metallic gold, lime green and ivory, with a firefly inside a trading card — and the point was to see how that identity would behave across a real store, with <span class="cor-p5">17 pages</span>: home, a filtered catalogue, twelve product pages, cart, about and help.</p>
+    <p><span class="cor-p5">HTML, CSS and JavaScript</span> were used, with no framework and no dependencies. The gold card frames, the diamond background pattern and the product icons are all hand-drawn CSS and SVG; a small Python script assembles the pages from a single catalogue, so a price or a product changes in one place.</p>
+    <p>It is a visual prototype: no real cart, search, login or payment, and the products and prices are fictional.</p>
+    <p>The pages are <span class="cor-p7">responsive</span>, designed mobile-first.</p>
 
 - id: behance
   title_pt: Meu portfólio no Behance
