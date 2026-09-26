@@ -13,6 +13,12 @@ Language comes from page.lang (pt-br or en).
 				<a href="{{ p.site }}" target="_blank" rel="noopener">
 					<img class="cartao-img" src="{{ p.images[0].src }}" alt="{{ p.images[0].alt }}" loading="lazy">
 				</a>
+				{%- if p.ai_enhanced %}
+				<span class="selo-ia" title="{% if lang_pt %}Partes deste projeto foram feitas com assistência de IA{% else %}Parts of this project were built with AI assistance{% endif %}">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2l2.1 6.1 6.1 2.1-6.1 2.1L12 18.6l-2.1-6.1L3.8 10.4l6.1-2.1z"/><path d="M18.6 15.4l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z"/></svg>
+					{% if lang_pt %}Aprimorado com IA{% else %}AI enhanced{% endif %}
+				</span>
+				{%- endif %}
 				{%- if p.images.size > 1 %}
 				<div class="cartao-thumbs">
 					{%- for im in p.images %}
@@ -30,7 +36,7 @@ Language comes from page.lang (pt-br or en).
 					{%- if p.tags.size > 0 %}
 					<ul class="code-tags cartao-tags">
 						{%- for t in p.tags %}
-						<li class="tag-{{ t }}">{% case t %}{% when 'html' %}HTML{% when 'css' %}CSS{% when 'js' %}JavaScript{% when 'react' %}React{% when 'figma' %}Figma{% endcase %}</li>
+						<li class="tag-{{ t }}">{% case t %}{% when 'html' %}HTML{% when 'css' %}CSS{% when 'js' %}JavaScript{% when 'react' %}React{% when 'figma' %}Figma{% when 'ts' %}TypeScript{% when 'cloudflare' %}Cloudflare{% endcase %}</li>
 						{%- endfor %}
 					</ul>
 					{%- endif %}

@@ -508,3 +508,50 @@
 .carrossel-seta:disabled:hover {
   background-color: var(--cor-11);
 }
+
+/* Selo de projeto com assistência de IA, sobreposto à imagem do cartão. */
+
+.selo-ia {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px 6px 9px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  background: linear-gradient(135deg, var(--cor-p6), var(--cor-p4));
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: bolder;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  box-shadow: 0 2px 10px rgba(3, 3, 33, 0.35);
+  pointer-events: auto;
+  cursor: help;
+}
+
+.selo-ia svg {
+  width: 14px;
+  height: 14px;
+  fill: #e0e0ff;
+  flex: none;
+}
+
+@media (max-width: 600px) {
+  .selo-ia {
+    font-size: 0.66rem;
+    padding: 5px 10px 5px 8px;
+  }
+  .selo-ia svg { width: 12px; height: 12px; }
+}
+
+.tag-ts{
+  background-color: #3178c6;
+  color: #0e2c4f;
+}
+.tag-cloudflare{
+  background-color: #f6821f;
+  color: #5b3008;
+}

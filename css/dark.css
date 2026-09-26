@@ -118,3 +118,9 @@ html[data-theme="dark"] .cena-404-escuro {
       color: var(--cor-p2);
     }
 }
+
+html[data-theme="dark"] .selo-ia {
+  border-color: rgba(224, 224, 255, 0.4);
+  background: linear-gradient(135deg, #2a2a6e, #4d4d9a);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
