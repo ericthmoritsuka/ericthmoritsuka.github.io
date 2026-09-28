@@ -1,0 +1,13 @@
+{%- comment -%}
+Course and certification list, built from _data/courses.yml (newest first).
+Language comes from page.lang (pt-br or en).
+{%- endcomment -%}
+{%- assign lang_pt = false -%}
+{%- if page.lang == "pt-br" -%}{%- assign lang_pt = true -%}{%- endif -%}
+<ul class="lista-de-cursos font-2-s cor-11">
+{%- for c in site.data.courses %}
+	{%- if lang_pt %}{% assign name = c.pt %}{% else %}{% assign name = c.en %}{% endif %}
+	{%- if c.label %}{% assign when = c.label %}{% elsif c.until %}{% if lang_pt %}{% capture when %}{{ c.year }} - {{ c.until }}{% endcapture %}{% else %}{% capture when %}{{ c.year }}–{{ c.until }}{% endcapture %}{% endif %}{% else %}{% assign when = c.year %}{% endif %}
+	<li>{% if c.url %}<a href="{{ c.url }}" target="_blank" rel="noopener">{{ name }}</a>{% else %}{{ name }}{% endif %} / {{ when }}</li>
+{%- endfor %}
+</ul>

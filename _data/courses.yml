@@ -1,0 +1,173 @@
+# Courses and certifications, newest first. Both profile pages render this
+# list through _includes/course-list.html. Dates follow LinkedIn where the
+# course is listed there; add new entries at the top. A course taken more
+# than once keeps one entry, dated by the latest run, with label showing all
+# the years and url pointing at the current certificate.
+
+- pt: Mastering Search Engine Optimization with Liferay
+  en: Mastering Search Engine Optimization with Liferay
+  year: 2026
+
+- pt: "AI Fluency: Framework & Foundations - Anthropic"
+  en: "AI Fluency: Framework & Foundations - Anthropic"
+  year: 2026
+  url: https://verify.skilljar.com/c/ea7yikho69h5
+
+- pt: Introduction to Claude Cowork - Anthropic
+  en: Introduction to Claude Cowork - Anthropic
+  year: 2026
+  url: https://verify.skilljar.com/c/p2myz6obbg8d
+
+- pt: Claude 101 - Anthropic
+  en: Claude 101 - Anthropic
+  year: 2026
+  url: https://verify.skilljar.com/c/pzrykpx7pzw6
+
+- pt: Claude Code in Action - Anthropic
+  en: Claude Code in Action - Anthropic
+  year: 2026
+  url: https://verify.skilljar.com/c/c9no6iur63jw
+
+- pt: Claude Code 101 - Anthropic
+  en: Claude Code 101 - Anthropic
+  year: 2026
+  url: https://verify.skilljar.com/c/83ixxr7bvica
+
+- pt: Liferay Application Developer
+  en: Liferay Application Developer
+  year: 2026
+  url: https://www.linkedin.com/in/ericthmoritsuka/overlay/Certifications/628938757/treasury
+
+- pt: Building Enterprise Websites with Liferay
+  en: Building Enterprise Websites with Liferay
+  year: 2026
+  label: 2024/2026
+  url: https://www.linkedin.com/in/ericthmoritsuka/overlay/Certifications/629036488/treasury
+
+- pt: Mastering Data Modeling with Liferay Objects
+  en: Mastering Data Modeling with Liferay Objects
+  year: 2025
+
+- pt: Versionamento de Código com Git e GitHub
+  en: Version Control with Git and GitHub
+  year: 2024
+  url: https://hermes.dio.me/certificates/en/WWVPI55O.pdf
+
+- pt: Introdução à Plataforma Java
+  en: Introduction to Java Platform
+  year: 2024
+  url: https://hermes.dio.me/certificates/en/NOLLNMGC.pdf
+
+- pt: "Technical Writing: How to Write Software Documentation"
+  en: "Technical Writing: Software Documentation"
+  year: 2023
+  url: https://www.udemy.com/certificate/UC-1adb3b00-8804-4838-a0e2-f9424a11dcf6/
+
+- pt: Tech Writers Master Class
+  en: Tech Writers Master Class
+  year: 2022
+  url: https://www.udemy.com/certificate/UC-70429b6f-4da7-4213-8542-2ce5e3f04a31/
+
+- pt: "Git e GitHub: repositório, commit e versões - Alura"
+  en: "Git and GitHub: Repositories, Commits, and Versions - Alura"
+  year: 2022
+
+- pt: React Completo - Origamid
+  en: React - Origamid
+  year: 2022
+  url: https://www.origamid.com/certificate/6c1ea652/
+
+- pt: WordPress REST API (projeto Dogs) - Origamid
+  en: WordPress REST API (Dogs Project) - Origamid
+  year: 2022
+  url: https://www.origamid.com/certificate/d2c933d1/
+
+- pt: UI Design Avançado - Origamid
+  en: Advanced UI Design - Origamid
+  year: 2022
+  url: https://www.origamid.com/certificate/0de3feba/
+
+- pt: JavaScript Completo ES6+ - Origamid
+  en: JavaScript ES6+ - Origamid
+  year: 2022
+  url: https://www.origamid.com/certificate/a7b2faea/
+
+- pt: CSS Grid Layout - Origamid
+  en: CSS Grid Layout - Origamid
+  year: 2022
+  url: https://www.origamid.com/certificate/12fab935/
+
+- pt: CSS Flexbox - Origamid
+  en: CSS Flexbox - Origamid
+  year: 2022
+  url: https://www.origamid.com/certificate/9c1b8e6f/
+
+- pt: HTML e CSS para Iniciantes - Origamid
+  en: HTML & CSS for Beginners - Origamid
+  year: 2022
+  url: https://www.origamid.com/certificate/292abf62/
+
+- pt: UI Design para Iniciantes - Origamid
+  en: UI Design for Beginners - Origamid
+  year: 2022
+  url: https://www.origamid.com/certificate/41316e82/
+
+- pt: "Bizagi: introdução ao mapeamento de processos com BPMN - Alura"
+  en: BPMN Process Modeling with Bizagi - Alura
+  year: 2022
+
+- pt: "Engenharia de requisitos: como levantar, documentar e validar - Alura"
+  en: "Requirements Engineering: Elicitation, Documentation, and Validation - Alura"
+  year: 2022
+
+- pt: "Engenharia de requisitos: da demanda ao gerenciamento - Alura"
+  en: "Requirements Engineering: From Demand to Management - Alura"
+  year: 2022
+
+- pt: "UML: introdução à modelagem de soluções - Alura"
+  en: "UML: Introduction to Solution Modeling - Alura"
+  year: 2022
+
+- pt: Data Analytics (5 módulos de 8) - Google (Coursera)
+  en: Google Data Analytics (5/8 modules) - Coursera
+  year: 2021
+  until: 2022
+  url: https://www.coursera.org/account/accomplishments/certificate/F9XRFVX9BEBC
+
+- pt: Introduction to SQL - DataCamp
+  en: Introduction to SQL - DataCamp
+  year: 2021
+  url: https://www.datacamp.com/statement-of-accomplishment/course/b45fc37746d5d8920f5b99315691a5b17791733e
+
+- pt: Problem Solving (basic) - HackerRank
+  en: Problem Solving (Basic) - HackerRank
+  year: 2021
+  url: https://www.hackerrank.com/certificates/2f1220c38294
+
+- pt: Python - HackerRank
+  en: Python - HackerRank
+  year: 2021
+  url: https://www.hackerrank.com/certificates/67894e29dd59
+
+- pt: "Autoridade: Algoritmo - Devmedia"
+  en: Algorithms Certification - DevMedia
+  year: 2021
+  url: https://www.devmedia.com.br/certificado/tecnologia/algoritmo/eric-moritsuka
+
+- pt: "Autoridade: Python - Devmedia"
+  en: Python Certification - DevMedia
+  year: 2021
+  url: https://www.devmedia.com.br/certificado/tecnologia/python/eric-moritsuka
+
+- pt: Desenvolvimento de Jogos Digitais - SAGA (PE)
+  en: Digital Game Development - SAGA
+  year: 2015
+  until: 2017
+
+- pt: Desenho de Personagem - Curro Velho (PA)
+  en: Character Design - Curro Velho
+  year: 2013
+
+- pt: Animação em Stop Motion - Curro Velho (PA)
+  en: Stop Motion Animation - Curro Velho
+  year: 2013
