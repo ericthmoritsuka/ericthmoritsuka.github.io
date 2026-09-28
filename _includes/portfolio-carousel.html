@@ -13,10 +13,10 @@ Language comes from page.lang (pt-br or en).
 				<a href="{{ p.site }}" target="_blank" rel="noopener">
 					<img class="cartao-img" src="{{ p.images[0].src }}" alt="{{ p.images[0].alt }}" loading="lazy">
 				</a>
-				{%- if p.ai_enhanced %}
-				<span class="selo-ia" title="{% if lang_pt %}Partes deste projeto foram feitas com assistência de IA{% else %}Parts of this project were built with AI assistance{% endif %}">
+				{%- if p.ai %}
+				<span class="selo-ia" title="{% if p.ai == "implemented" %}{% if lang_pt %}Projeto desenvolvido do zero com assistência de IA{% else %}Built from scratch with AI assistance{% endif %}{% else %}{% if lang_pt %}Projeto já existente, melhorado com assistência de IA{% else %}An existing project, improved with AI assistance{% endif %}{% endif %}">
 					<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2l2.1 6.1 6.1 2.1-6.1 2.1L12 18.6l-2.1-6.1L3.8 10.4l6.1-2.1z"/><path d="M18.6 15.4l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z"/></svg>
-					{% if lang_pt %}Aprimorado com IA{% else %}AI enhanced{% endif %}
+					{% if p.ai == "implemented" %}{% if lang_pt %}Implementado com IA{% else %}Implemented with AI{% endif %}{% else %}{% if lang_pt %}Aprimorado com IA{% else %}Enhanced with AI{% endif %}{% endif %}
 				</span>
 				{%- endif %}
 				{%- if p.images.size > 1 %}

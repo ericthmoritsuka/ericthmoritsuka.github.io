@@ -271,7 +271,7 @@
 - id: pokedex
   title_pt: Pokedex
   title_en: Pokedex
-  ai_enhanced: true
+  ai: enhanced
   tags: [html, css, js]
   github: https://github.com/ericthmoritsuka/pokedex
   site: https://ericthmoritsuka.github.io/pokedex/
@@ -296,7 +296,7 @@
 - id: rpgTrapalhoes
   title_pt: "RPG: Os Trapalhões"
   title_en: "RPG: Os Trapalhões"
-  ai_enhanced: true
+  ai: enhanced
   tags: [html, css, js]
   github: https://github.com/ericthmoritsuka/trapalhoesIlhaDosDinossauros
   site: https://ericthmoritsuka.github.io/trapalhoesIlhaDosDinossauros/
@@ -326,7 +326,7 @@
   title_pt: Cachos da Clara
   title_en: Cachos da Clara
   tags: [css, react, ts, cloudflare]
-  ai_enhanced: true
+  ai: implemented
   site: https://cachosdaclara.com.br
   images:
     - src: /img/portfolio/cachosDaClara.jpg
@@ -350,7 +350,7 @@
   title_pt: Hotaru
   title_en: Hotaru
   tags: [html, css, js]
-  ai_enhanced: true
+  ai: implemented
   github: https://github.com/ericthmoritsuka/hotaru
   site: https://ericthmoritsuka.github.io/hotaru/
   images:
